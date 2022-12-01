@@ -1,0 +1,29 @@
+{
+  "name": "sae301",
+  "version": "1.0.0",
+  "description": "Site évènementiel de Leclerc pour Noël",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinGP23/Leclerc-project-mmi-2022.git"
+  },
+  "keywords": [
+    "Leclerc",
+    "projet",
+    "évènement",
+    "Noël",
+    "supermarché",
+    "vente",
+    "MMI",
+    "IUT"
+  ],
+  "author": "Quentin GEOFFROY PITAILLER Quentin, Rodrigo BREDA PINHEIRO, Yannis BOUTTIER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinGP23/Leclerc-project-mmi-2022/issues"
+  },
+  "homepage": "https://github.com/QuentinGP23/Leclerc-project-mmi-2022#readme"
+}
