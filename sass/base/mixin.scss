@@ -1,0 +1,11 @@
+@mixin popup{
+    height: 344px;
+    width: 423.5px;
+    border-radius: 28px;
+}
+
+@mixin flexendcolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

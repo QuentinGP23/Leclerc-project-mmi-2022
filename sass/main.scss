@@ -2,7 +2,12 @@
 @import "./utils/variables";
 @import "./base/fonts";
 @import "./base/global";
+@import "./base/mixin";
 
 //components
 @import "./components/header";
 @import "./components/footer";
+
+//page
+@import "./pages/scroll.scss";
+@import "./pages/popups.scss";
