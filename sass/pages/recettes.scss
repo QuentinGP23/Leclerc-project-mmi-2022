@@ -81,6 +81,22 @@
                 font-family: 'Playball', cursive;
                 font-size: 1rem;
             }
+            #cadre1{
+                z-index: -1;
+                position: absolute;
+                margin: 0;
+                width: 15vw;
+                top: 46%;
+                left: 33vw;
+            }
+            #cadre2{
+                z-index: -1;
+                position: absolute;
+                margin: 0;
+                width: 21vw;
+                top: 62%;
+                left: 33vw;
+            }
         }
     }
 }
