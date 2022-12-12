@@ -21,7 +21,7 @@
         @media screen and (min-width: 768px) {
             width: 44vw;
             left: 5vw;
-            top: 7vh;
+            top: 9vh;
           }
     }
     #etoile2{
@@ -49,8 +49,43 @@
 .recette1{
     background: rgba(212, 185, 161, 1);
     @include fullpage;
+    color: #564D45;
     .fondhorrible{
         width: 100%;
         height: 100%;
+        margin: 0;
+        position: absolute;
+        z-index: 0;
     }
+    .recette1-inside{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        img{
+            width: 16vw;
+            margin: 10vh 5vw 0 14vw;
+        }
+        .recette1-txt{
+            width: 50%;
+            margin-bottom: 0;
+            h2{
+                font-family: 'Christmas Bell - Personal Use', sans-serif;
+                font-size: 5rem;
+                margin: 10vh 0 0 0;
+            }
+            h3{
+                font-family: 'Playball', cursive;
+                font-size: 2rem;
+            }
+            p{
+                font-family: 'Playball', cursive;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.recette2{
+    background-color: #86BC8D;
+    @include fullpage;
 }
