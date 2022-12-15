@@ -57,7 +57,7 @@
         position: absolute;
         z-index: 0;
     }
-    .recette1-inside{
+    .recette1-haut{
         position: relative;
         z-index: 2;
         display: flex;
@@ -74,29 +74,54 @@
                 margin: 10vh 0 0 0;
             }
             h3{
-                font-family: 'Playball', cursive;
+                font-family: "Playball",cursive;
                 font-size: 2rem;
+                position: absolute;
+                top: 31%;
+                left: 37%;
             }
             p{
                 font-family: 'Playball', cursive;
-                font-size: 1rem;
+                font-size: 1.2rem;
+                margin: 5px 0 0px 0;
             }
-            #cadre1{
-                z-index: -1;
-                position: absolute;
-                margin: 0;
-                width: 15vw;
-                top: 46%;
-                left: 33vw;
+            #corpstxt{
+                top:10vh;
+                #cadre1{
+                    z-index: -1;
+                    margin: 0;
+                    width: 15vw;
+                }
+                #cadre2{
+                    z-index: -1;
+                    position: absolute;
+                    margin: 0;
+                    width: 23vw;
+                    top: 55%;
+                    left: 33vw;
+                }
             }
-            #cadre2{
-                z-index: -1;
-                position: absolute;
-                margin: 0;
-                width: 21vw;
-                top: 62%;
-                left: 33vw;
-            }
+        }
+    }
+    .recette1-bas{
+        position: relative;
+        width: 80%;
+        height: 30%;
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        left: 20%;
+        #cadre3{
+            margin: 0;
+            width: 80%;
+            bottom: -40%;
+            position: relative;
+        }
+        .listrecette1{
+            font-family: 'Playball', cursive;
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: -37%;
         }
     }
 }
