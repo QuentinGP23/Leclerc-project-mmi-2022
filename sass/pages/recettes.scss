@@ -129,4 +129,14 @@
 .recette2{
     background-color: #86BC8D;
     @include fullpage;
+    .recette2-haut{
+        display: flex;
+        justify-content: center;
+        h2{
+            font-family: 'Christmas Bell - Personal Use', sans-serif;
+            font-size: 5rem;
+            position: relative;
+            color: #FBDA86;
+        }
+    }
 }
