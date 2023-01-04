@@ -82,6 +82,7 @@
                 grid-template-columns: 1fr 50% 1fr;
                 grid-template-rows: 1fr 60% 1fr;
                 h2{
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     font-family: "Christmas Bell - Personal Use";
                     font-style: normal;
                     color: #fbda86;
@@ -95,6 +96,7 @@
                     grid-row: 1;
                 }
                 #recette3-sapin{
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     display: inline-grid;
                     grid-column: 1;
                     grid-row: 1;
@@ -116,7 +118,9 @@
                     justify-self: center;
                     height: 100%;
                     width: 70%;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     .recette3-txt1{
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         color: #fff;
                         width: 70%;
                         height: 70%;
@@ -135,6 +139,7 @@
                             margin-bottom: 5%;
                         }
                     }
+                    
                     #recette3-txt-hide{
                         display: none;
                     }
@@ -150,12 +155,44 @@
                     background-position: center top;
                     background-size: contain;
                     position: relative;
-                    display: inline-grid;
                     grid-column: 1;
-                    grid-row: 2 / span 3;
-                    width: 90%;
-                    h3{
-                        margin: 0;
+                    grid-row: 2/span 3;
+                    width: 103%;
+                    height: 76%;
+                    display: flex;
+                    top: 2vh;
+                    align-items: flex-start;
+                    justify-content: center;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    .recette3-txt3{
+                        width: 57%;
+                        position: relative;
+                        height: auto;
+                        top: 14.2vh;
+                        transform: rotate(358deg);
+                        h3{
+                            margin: 0;
+                            color: #fff;
+                            position: relative;
+                            font-family: "Playball";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1.5vw;
+                            line-height: 1.5;
+                        }
+                        ul{
+                            color: #fff;
+                            width: 70%;
+                            height: 70%;
+                            position: relative;
+                            font-family: "Playball";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: .9vw;
+                            line-height: 1.5;
+                            margin: 0;
+                            padding-inline-start: 1.7vw;
+                        }
                     }
                 }
                 #recette3-btn{
@@ -196,8 +233,40 @@
             }
             #recette4{
                 background: rgba(178, 227, 242, 1);
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows:60% 40%;
+                .up{
+                    grid-column: 1;
+                    grid-row: 1;
+                    background-image: url(./../img/backgroundrecette4.svg);
+                    background-repeat: no-repeat;
+                    background-size: 90%;
+                    background-position: center top;
+                    h2{
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        font-family: "Christmas Bell - Personal Use";
+                        font-style: normal;
+                        color: #ffffff;
+                        font-size: 8vw;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                }
+                .down{
+                    grid-column: 1;
+                    grid-row: 2;
+                    background-color: #fff;
+                }
                 #recette4-navpoint{
                     display: inline-grid;
+                    position: relative;
+                    grid-column: 1;
+                    grid-row: 1 / span 2;
+                    justify-self: end;
+                    align-self: center;
+                    width: 1.3vw;
+                    right: 1vw;
                 }
             }
             #recette5{
