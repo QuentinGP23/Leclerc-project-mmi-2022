@@ -6,6 +6,16 @@
                 @include fullpagediv;
                 overflow: hidden;
             }
+            #navpoint{
+                position: fixed;
+                right: 1.5vw;
+                height: 15vh;
+                z-index: 999;
+                top: 42.5vh;
+                circle:focus{
+                    fill: #564D45 !important;
+                }
+            }
             #recette1{
                 background: linear-gradient(180deg, #4D45AC 0%, #231A89 100%);
                 display: grid;
@@ -22,16 +32,6 @@
                     grid-column: 1 / span 3;
                     align-self: center;
                     justify-self: center;
-                }
-                #recette1-navpoint{
-                    display: inline-grid;
-                    position: relative;
-                    grid-column: 3;
-                    grid-row: 2;
-                    justify-self: end;
-                    align-self: center;
-                    right: 1vw;
-                    width: 1.3vw;
                 }
                 #logo{
                     display: inline-grid;
@@ -64,31 +64,16 @@
                 display: grid;
                 grid-template-columns: 1fr 45% 1fr;
                 grid-template-rows: 60% 1fr;
-                #recette2-navpoint{
-                    display: inline-grid;
-                    position: relative;
-                    grid-column: 3;
-                    grid-row: 1 / span 2;
-                    justify-self: end;
-                    align-self: center;
-                    right: 1vw;
-                    width: 1.3vw;
-                }
                 h2{
-                    position: relative;
-                    font-family: "Christmas Bell - Personal Use";
-                    font-style: normal;
+                    @include reccetteh2;
                     color: #564D45;
-                    font-size: $h2-recette;
-                    font-weight: 400;
-                    margin: 0;
                     display: inline-grid;
                     justify-self: center;
                     align-self: start;
                     grid-column: 1 / span 3;
                     grid-row: 1;
                     top: 15%;
-                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    
                 }
                 .biscuit{
                     display: inline-grid;
@@ -119,13 +104,7 @@
                         h3{
                             color: #564d45;
                             height: 70%;
-                            position: relative;
-                            font-family: "Playball";
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 2.5vw;
-                            line-height: 1.5;
-                            margin: 0;
+                            @include recetteh3;
                             bottom: 12%;
                             left: 10%;
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -176,22 +155,16 @@
                         background-size: contain;
                         h3{
                             color: #564d45;
-                            position: relative;
-                            font-family: "Playball";
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 2.5vw;
-                            line-height: 1.5;
+                            @include recetteh3;
                             left: 2%;
                             bottom: 9%;
-                            margin: 0;
                         }
                     }
                     .cadre2{
                         background-image: url(./../img/cadretxt2.svg);
                         background-repeat: no-repeat;
                         background-size: contain;
-                        height: 160%;
+                        height: 156%;
                         position: relative;
                         bottom: 15%;
                         ol{
@@ -217,13 +190,8 @@
                 grid-template-columns: 1fr 50% 1fr;
                 grid-template-rows: 1fr 60% 1fr;
                 h2{
-                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                    font-family: "Christmas Bell - Personal Use";
-                    font-style: normal;
+                    @include reccetteh2;
                     color: #fbda86;
-                    font-size: $h2-recette;
-                    font-weight: 400;
-                    margin: 0;
                     display: inline-grid;
                     justify-self: center;
                     align-self: center;
@@ -355,16 +323,6 @@
                         left: 18%;
                     }
                 }
-                #recette3-navpoint{
-                    display: inline-grid;
-                    position: relative;
-                    grid-column: 3;
-                    grid-row: 2;
-                    justify-self: end;
-                    align-self: center;
-                    right: 1vw;
-                    width: 1.3vw;
-                }
             }
             #recette4{
                 background: rgba(178, 227, 242, 1);
@@ -382,13 +340,8 @@
                     grid-row: 1;
                     background-position: center top;
                     h2{
-                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                        font-family: "Christmas Bell - Personal Use";
-                        font-style: normal;
+                        @include reccetteh2;
                         color: #ffffff;
-                        font-size: $h2-recette;
-                        font-weight: 400;
-                        margin: 0;
                         display: inline-grid;
                         justify-self: center;
                         align-self: end;
@@ -414,13 +367,7 @@
                         place-self: end center;
                         h3{
                             color: rgb(86, 77, 69);
-                            position: relative;
-                            font-family: Playball;
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 2.5vw;
-                            line-height: 1.5;
-                            margin: 0px;
+                            @include recetteh3;
                             text-align: center;
                             width: 100%;
                             bottom: 5%;
@@ -439,26 +386,56 @@
                     grid-row: 2;
                     background-color: #fff;
                     display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
                     .recette4-txt{
-                        background-image: url();
+                        background-image: url(./../img/recette4cadre.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 85%;
+                        width: 35%;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        ul{
+                            color: #564d45;
+                            position: relative;
+                            font-family: "Playball";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.6vw;
+                            line-height: 1.5;
+                            margin: 0;
+                            padding-inline-start:0;
+                            left: 15%;
+                        }
+                        ol{
+                            color: #564d45;
+                            position: relative;
+                            font-family: "Playball";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.6vw;
+                            line-height: 1.5;
+                            margin: 0;
+                            padding-inline-start:0;
+                            width: 73%;
+                            left: 15%;
+                            li{
+                                margin-bottom: 10%;
+                                :last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
                     }
-                }
-                #recette4-navpoint{
-                    display: inline-grid;
-                    position: relative;
-                    grid-column: 1;
-                    grid-row: 1 / span 2;
-                    justify-self: end;
-                    align-self: center;
-                    width: 1.3vw;
-                    right: 1vw;
+                    .recette4-btn{
+                        width: 5%;
+                    }
                 }
             }
             #recette5{
                 background: rgba(223, 177, 136, 1);
-                #recette5-navpoint{
-                    display: inline-grid;
-                }
             }
         }
     }

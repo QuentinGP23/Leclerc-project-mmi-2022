@@ -1,5 +1,8 @@
 html{
     scroll-behavior: smooth;
+    &::webkit-scrollbar{
+        border-radius: 5px;
+    }
 }
 
 body{
