@@ -142,7 +142,7 @@
 
                 }
                 .recette2-txt2{
-                    width: 94%;
+                    width: 90%;
                     display: inline-grid;
                     align-self: center;
                     justify-self: center;
@@ -183,7 +183,7 @@
                             margin: 0;
                             top: 11%;
                             width: 90%;
-                            left: 1%;
+                            left: 2%;
                         }
                     }
                 }
@@ -340,7 +340,7 @@
                     grid-template-rows: 1fr 1fr 1fr;
                     background-image: url(./../img/backgroundrecette4.svg);
                     background-repeat: no-repeat;
-                    background-size: 90%;
+                    background-size:cover;
                     grid-column: 1;
                     grid-row: 1;
                     background-position: center top;
@@ -395,13 +395,13 @@
                     align-items: center;
                     justify-content: space-evenly;
                     .recette4-txt{
-                        background-image: url(./../img/recette4cadre.svg);
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        background-color: #FAFAFA;
+                        border-radius: 42px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         height: 85%;
                         width: 35%;
                         display: flex;
-                        justify-content: start;
+                        justify-content: center;
                         align-items: center;
                         ul{
                             color: #564d45;
@@ -412,8 +412,6 @@
                             font-size: 1.6vw;
                             line-height: 1.5;
                             margin: 0;
-                            padding-inline-start:0;
-                            left: 15%;
                         }
                         ol{
                             color: #564d45;
@@ -424,9 +422,7 @@
                             font-size: 1.6vw;
                             line-height: 1.5;
                             margin: 0;
-                            padding-inline-start:0;
                             width: 73%;
-                            left: 15%;
                             li{
                                 margin-bottom: 10%;
                                 :last-child{
@@ -442,6 +438,46 @@
             }
             #recette5{
                 background: rgba(223, 177, 136, 1);
+                background-image: url(./../img/backgroundrecette5.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 20% 1fr;
+                h2{
+                    @include reccetteh2;
+                    color: #ffffff;
+                    display: inline-grid;
+                    grid-column: 1;
+                    grid-row: 1;
+                    justify-self: end;
+                    align-self: end;
+                }
+                .ingredients{
+                    width: 70%;
+                    display: inline-grid;
+                    grid-column: 1;
+                    grid-row: 2;
+                    justify-self: end;
+                    align-self: center;
+                    #ingredientcadre{
+                        width: 45%;
+                    }
+                    #txt{
+                        background-color: #FFD773;
+                        width: 45%;
+                        height: 50%;
+                    }
+                }
+                .preparation{
+                    width: 50%;
+                    height: 50%;
+                    display: inline-grid;
+                    grid-column: 2;
+                    grid-row: 2;
+                    justify-self: start;
+                    align-self: center;
+                }
             }
         }
     }
