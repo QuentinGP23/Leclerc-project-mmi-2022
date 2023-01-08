@@ -1,6 +1,4 @@
     body{
-        width: 100%;
-        box-sizing: border-box;
         main{
             .recette{
                 @include fullpagediv;
@@ -354,8 +352,8 @@
                         background-position: center;
                         position: relative;
                         display: inline-grid;
-                        width: 100%;
-                        height: 60%;
+                        width: 80%;
+                        height: 53%;
                         place-self: end center;
                         h3{
                             color: rgb(86, 77, 69);
@@ -458,13 +456,49 @@
                     }
                 }
                 .preparation{
-                    width: 50%;
-                    height: 50%;
+                    width: 69%;
+                    height: 75%;
                     display: inline-grid;
                     grid-column: 2;
                     grid-row: 2;
                     justify-self: start;
-                    align-self: center;
+                    align-self: start;
+                    .recette5h3{
+                        background-image: url(./../img/cadretitrerecette5.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        position: relative;
+                        width: 47%;
+                        top: 45%;
+                        height: 56%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        h3{
+                            @include recetteh3;
+                            color: #564D45;
+                            bottom: 10%;
+                        }
+                    }
+                    .txtprepa5{
+                        width: 98%;
+                        background-color: #fff;
+                        border-radius: 42px;
+                        padding: 5%;
+                        box-shadow: 1.5vw 3.5vh 0px 0px #ffd773;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        ol{
+                            color: #564d45;
+                            position: relative;
+                            font-family: "Playball";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.6vw;
+                            line-height: 1.5;
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
