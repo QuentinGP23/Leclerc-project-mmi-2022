@@ -196,7 +196,14 @@
                         #btnrecette2{
                             position: relative;
                             width: 6%;
-                            right: 9%;
+                            right: 15%;
+                            top: 54%;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        }
+                        #btnrecette2_1{
+                            position: relative;
+                            width: 6%;
+                            right: 5%;
                             top: 54%;
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         }
@@ -268,6 +275,12 @@
                         width: 12%;
                         bottom: 14%;
                         right: 14%;
+                    }
+                    #recette3-btn_1{
+                        position: absolute;
+                        width: 12%;
+                        bottom: 14%;
+                        right: 29%;
                     }
                 }
                 .recette3-txt-left{
@@ -417,6 +430,10 @@
                         }
                     }
                     .recette4-btn{
+                        width: 5%;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+                    .recette4-btn_1{
                         width: 5%;
                         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     }
