@@ -123,7 +123,7 @@
                         position: relative;
                         height: 120%;
                         left: -2%;
-                        border-radius: 42px;
+                        border-radius: $recetteangle;
                         bottom: -6%;
                         ul{
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.150));
@@ -142,7 +142,7 @@
 
                 }
                 .recette2-txt2{
-                    width: 90%;
+                    width: 77%;
                     display: inline-grid;
                     align-self: center;
                     justify-self: center;
@@ -174,9 +174,9 @@
                         flex-direction: row;
                         justify-content: center;
                         align-items: flex-start;
-                        background-color: #EBD7C6;
+                        background-color: #ebd7c6;
                         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-                        border-radius: 42px;
+                        border-radius: 2vw;
                         padding: 1%;
                         ol{
                             color: #564d45;
@@ -185,26 +185,35 @@
                             font-style: normal;
                             font-weight: 400;
                             font-size: 1.3vw;
-                            line-height: 1.5;
+                            line-height: 1.2;
                             margin: 0;
+                            left: 2%;
+                            height: 18vh;
+                            width: 100%;
                             li {
                                 &:not(:last-child) {
                                     margin-bottom: 2%;
                                 }
                             }
                         }
+                        .recette2-0l1{
+                            display: auto;
+                        }
+                        .recette2-0l2{
+                            display: none;
+                        }
                         #btnrecette2{
                             position: relative;
-                            width: 6%;
-                            right: 15%;
-                            top: 54%;
+                            width: 7%;
+                            right: 17%;
+                            top: 50%;
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         }
                         #btnrecette2_1{
                             position: relative;
-                            width: 6%;
-                            right: 5%;
-                            top: 54%;
+                            width: 7%;
+                            right: 4%;
+                            top: 50%;
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         }
                     }
@@ -256,12 +265,18 @@
                         font-style: normal;
                         font-weight: 400;
                         font-size: 1.5vw;
-                        line-height: 1.5;
+                        line-height: 1;
                         margin: 0;
                         top: 12%;
                         left: 12%;
                         right: 12%;
                         padding-inline-start: 1.7vw;
+                        .recette3-0l1{
+                            display: auto;
+                        }
+                        .recette3-0l2{
+                            display: none;
+                        }
                         li{
                             margin-bottom: 5%;
                         }
@@ -394,7 +409,7 @@
                     justify-content: space-evenly;
                     .recette4-txt{
                         background-color: #FAFAFA;
-                        border-radius: 42px;
+                        border-radius: $recetteangle;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         height: 85%;
                         width: 35%;
@@ -417,12 +432,20 @@
                             font-family: "Playball";
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 1.6vw;
-                            line-height: 1.5;
+                            font-size: 1.5vw;
+                            line-height: 1.25;
                             margin: 0;
-                            width: 73%;
+                            padding: 5%;
+                            height: 79%;
+                            width: 79%;
+                            .recette4-0l1{
+                                display: auto;
+                            }
+                            .recette4-0l2{
+                                display: none;
+                            }
                             li{
-                                margin-bottom: 10%;
+                                margin-bottom: 5%;
                                 :last-child{
                                     margin-bottom: 0;
                                 }
@@ -478,6 +501,8 @@
                     display: inline-grid;
                     grid-column: 2;
                     grid-row: 2;
+                    position: relative;
+                    top: 10%;
                     justify-self: start;
                     align-self: start;
                     .recette5h3{
@@ -486,12 +511,13 @@
                         background-size: contain;
                         background-position: center;
                         position: relative;
-                        width: 47%;
-                        top: 45%;
-                        height: 56%;
+                        width: 40%;
+                        top: 1%;
+                        height: 110%;
                         display: flex;
                         justify-content: center;
                         align-items: flex-start;
+                        
                         h3{
                             @include recetteh3;
                             color: #564D45;
@@ -499,10 +525,10 @@
                         }
                     }
                     .txtprepa5{
-                        width: 98%;
+                        width: 99%;
                         background-color: #fff;
-                        border-radius: 42px;
-                        padding: 5%;
+                        border-radius: 2vw;
+                        padding: 4%;
                         box-shadow: 1.5vw 3.5vh 0px 0px #ffd773;
                         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         ol{
@@ -514,6 +540,24 @@
                             font-size: 1.6vw;
                             line-height: 1.5;
                             margin: 0;
+                            li{
+                                margin-bottom: 1%;
+                                :last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        #recette5btn{
+                            width: 14%;
+                            position: relative;
+                            left: 63%;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        }
+                        #recette5btn1{
+                            width: 14%;
+                            position: relative;
+                            left: 67%;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                         }
                     }
                 }
