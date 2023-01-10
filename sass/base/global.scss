@@ -6,6 +6,7 @@ body{
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+    overflow: overlay;
 }
 
 .turn{
@@ -13,12 +14,46 @@ body{
     p{
         color: #fff;
         font-size: 8vw;
+        text-transform: capitalize;
     }
 }
 
 #bigo{
-    width: 50%;
+    width: 70%;
     height: auto;
+    margin-bottom: 10%;
+    animation: shakeyourbooty 2.5s ease-in-out 0s infinite normal none;
+}
+@keyframes shakeyourbooty {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
 }
 
 @media only screen and (orientation:portrait) {
@@ -32,6 +67,9 @@ body{
         height: 100vh;
         background-color: #201D1D;
         z-index: 999;
+        p{
+            font-family: 'Gotham', sans-serif;
+        }
     }
 }
 
@@ -40,3 +78,14 @@ body{
         display: none;
     }
 }
+::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.322);
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(./../img/scrollbar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 42px;
+  }
