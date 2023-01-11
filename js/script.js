@@ -28,7 +28,7 @@ function recette3btndroite(){
 }
 // fin recette 3
 
-// recette 3
+// recette 4
 const recette4txt1 = document.querySelector('.recette4-0l1');
 const recette4txt2 = document.querySelector('.recette4-0l2');
 
@@ -41,4 +41,15 @@ function recette4btndroite(){
     recette4txt2.style.display = "none";
     recette4txt1.style.display = "block";
 }
-// fin recette 3
+// fin recette 4
+
+// recette 5 
+const recette5div = document.querySelector('#recette5txt');
+const recette5txt = document.querySelector('#ulrecette5');
+const recette5btn = document.querySelector('#recette5fleche');
+function recette5fleche(){
+    recette5txt.classList.toggle("recette5visible");
+    recette5btn.classList.toggle("btntranslate");
+    recette5div.classList.toggle("changewidth");
+}
+// fin recette 5

@@ -16,11 +16,11 @@
     </div>
     <main>
         <div class="section-position-container">
-            <div class="section-position section-position-1"></div>
-            <div class="section-position section-position-2"></div>
-            <div class="section-position section-position-3"></div>
-            <div class="section-position section-position-4"></div>
-            <div class="section-position section-position-5"></div>
+            <a href="#recette1"><div class="section-position section-position-1"></div></a>
+            <a href="#recette2"><div class="section-position section-position-2"></div></a>
+            <a href="#recette3"><div class="section-position section-position-3"></div></a>
+            <a href="#recette4"><div class="section-position section-position-4"></div></a>
+            <a href="#recette5"><div class="section-position section-position-5"></div></a>
         </div>
         <div class="panel-container">
             <section class="recette" id="recette1">
@@ -340,7 +340,18 @@
                 <h2>Truffes en chocolat</h2>
                 <div class="ingredients">
                     <img src="./../img/ingredients5.svg" alt="cadre" id="ingredientcadre" />
-                    <div id="txt"></div>
+                    <div class="jsp">
+                        <div id="recette5txt">
+                            <ul id="ulrecette5">
+                                <li>1 tablette de chocolat noir 
+                                    pour dessert</li>
+                                <li>1 jaune d’œuf</li>
+                                <li>Du sucre en poudre</li>
+                                <li>Du cacao non sucré</li>
+                            </ul>
+                        </div>
+                        <img onclick="recette5fleche()" src="./../img/recette5fleche.svg" alt="flèche" id="recette5fleche">
+                    </div>
                 </div>
                 <div class="preparation">
                     <div class="recette5h3">

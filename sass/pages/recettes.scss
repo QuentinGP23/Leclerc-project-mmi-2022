@@ -507,16 +507,51 @@
                     align-self: center;
                     #ingredientcadre{
                         width: 45%;
+                        z-index: 5;
                     }
-                    #txt{
-                        background-color: #FFD773;
-                        width: 45%;
-                        height: 50%;
+                    .jsp{
+                        #recette5txt{
+                            transition: all ease-in-out 0.3s;
+                            background-color: #ffd773;
+                            width: 0;
+                            height: 14vw;
+                            position: absolute;
+                            margin: -15.6% 0% 0% 15%;
+                            z-index: 0;
+                            ul{
+                                transition: all ease-in-out 0.3s;
+                                transition-delay: .3s;
+                                position: absolute;
+                                margin: 3% 0% 0% 0%;
+                                color: #564d45;
+                                font-family: "Playball";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 1.6vw;
+                                line-height: 1.5;
+                                display: none;
+                            }
+                        }
+                        .recette5visible{
+                            display: block !important;
+                        }
+                        .changewidth{
+                            width: 18vw !important;
+                        }
+                        #recette5fleche{
+                            transition: all ease-in-out 0.3s;
+                            position: absolute;
+                            height: 5.2vw;
+                            margin: -11% 0% 0% 15.2%;
+                        }
+                        .btntranslate{
+                            margin: -11% 0% 0% 32.8% !important;
+                        }
                     }
                 }
                 .preparation{
                     width: 69%;
-                    height: 75%;
+                    height: 72%;
                     display: inline-grid;
                     grid-column: 2;
                     grid-row: 2;
@@ -540,7 +575,7 @@
                         h3{
                             @include recetteh3;
                             color: #564D45;
-                            bottom: 6%;
+                            top: -8%;
                         }
                     }
                     .txtprepa5{
