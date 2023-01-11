@@ -14,24 +14,14 @@
         <img src="./../img/bigo.svg" alt="retournez votre téléphone" id="bigo" />
         <p>Tournez votre écran</p>
     </div>
-    <main class="panel-container">
-        <svg viewBox="0 0 19 123" fill="none" xmlns="http://www.w3.org/2000/svg" id="navpoint">
-            <a href="#recette1">
-                <circle cx="9.5" cy="9.5" r="9.5" fill="white" />
-            </a>
-            <a href="#recette2">
-                <circle cx="9.5" cy="35.5" r="9.5" fill="white" />
-            </a>
-            <a href="#recette3">
-                <circle cx="9.5" cy="61.5" r="9.5" fill="white" />
-            </a>
-            <a href="#recette4">
-                <circle cx="9.5" cy="87.5" r="9.5" fill="white" />
-            </a>
-            <a href="#recette5">
-                <circle cx="9.5" cy="113.5" r="9.5" fill="white" />
-            </a>
-        </svg>
+    <main>
+        <div class="section-position-container">
+            <div class="section-position section-position-1"></div>
+            <div class="section-position section-position-2"></div>
+            <div class="section-position section-position-3"></div>
+            <div class="section-position section-position-4"></div>
+            <div class="section-position section-position-5"></div>
+        </div>
         <div class="panel-container">
             <section class="recette" id="recette1">
                 <img src="./../img/recette_star_left.svg" alt="Étoiles gauche" id="star-left" />
@@ -94,7 +84,7 @@
                                 </li>
                             </span>
                         </ol>
-                        <svg onclick="recette2btngauche()" viewBox="0 0 70 70" fill="none"
+                        <svg class="btnhover" onclick="recette2btngauche()" viewBox="0 0 70 70" fill="none"
                             xmlns="http://www.w3.org/2000/svg" id="btnrecette2_1">
                             <g filter="url(#filter0_d_55_201)">
                                 <circle cx="35" cy="31" r="31" fill="#F3C243" />
@@ -110,7 +100,7 @@
                                 </filter>
                             </defs>
                         </svg>
-                        <svg onclick="recette2btndroite()" viewBox="0 0 70 70" fill="none"
+                        <svg class="btnhover" onclick="recette2btndroite()" viewBox="0 0 70 70" fill="none"
                             xmlns="http://www.w3.org/2000/svg" id="btnrecette2">
                             <g filter="url(#filter0_d_220_56)">
                                 <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243" />
@@ -172,7 +162,7 @@
                             d’une cuiller jusqu’à recouvrir entièrement le beurre.
                         </li>
                     </ol>
-                    <svg onclick="recette3btngauche()" id="recette3-btn" viewBox="0
+                    <svg class="btnhover" onclick="recette3btngauche()" id="recette3-btn" viewBox="0
                                                                                     0
                                                                                     70
                                                                                     70" fill="none"
@@ -239,7 +229,7 @@
                             </filter>
                         </defs>
                     </svg>
-                    <svg onclick="recette3btndroite()" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="btnhover" onclick="recette3btndroite()" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
                         id="recette3-btn_1">
                         <g filter="url(#filter0_d_220_59)">
                             <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#FBDA86" />
@@ -318,7 +308,7 @@
                         </ol>
                     </div>
     
-                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick="recette4btndroite()">
+                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn btnhover" onclick="recette4btndroite()">
                         <g filter="url(#filter0_d_221_62)">
                             <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#317F83" />
                         </g>
@@ -332,7 +322,7 @@
                         </defs>
                     </svg>
     
-                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick=" recette4btngauche()">
+                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn btnhover" onclick=" recette4btngauche()">
                         <g filter="url(#filter0_d_55_186)">
                             <circle cx="35" cy="31" r="31" fill="#317F83" />
                         </g>
@@ -373,56 +363,16 @@
                                 Lorsque c’est froid, forme des petites boules avec tes mains, et roule-les dans le cacao et le sucre en poudre.
                             </li>
                         </ol>
-                        <!-- <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn">
-                            <g filter="url(#filter0_d_220_56)">
-                            <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243"/>
-                            </g>
-                            <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white"/>
-                            <defs>
-                            <filter id="filter0_d_220_56" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="4"/>
-                            <feGaussianBlur stdDeviation="2"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_56"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_56" result="shape"/>
-                            </filter>
-                            </defs>
-                            </svg>
-                            <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn1">
-                                <g filter="url(#filter0_d_55_201)">
-                                <circle cx="35" cy="31" r="31" fill="#F3C243"/>
-                                </g>
-                                <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white"/>
-                                <defs>
-                                <filter id="filter0_d_55_201" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dy="4"/>
-                                <feGaussianBlur stdDeviation="2"/>
-                                <feComposite in2="hardAlpha" operator="out"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_201"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_201" result="shape"/>
-                                </filter>
-                                </defs>
-                                </svg> -->
                                 
                     </div>
                 </div>
             </section>
+            
         </div>
 
     </main>
 
-    <div class="section-position-container">
-        <div class="section-position section-position-1"></div>
-        <div class="section-position section-position-2"></div>
-        <div class="section-position section-position-3"></div>
-        <div class="section-position section-position-4"></div>
-    </div>
+    
     <script src="./../js/script.js"></script>
     <script src="./../js/scroll.js"></script>
 </body>
