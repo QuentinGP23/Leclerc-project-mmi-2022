@@ -14,7 +14,7 @@
         <img src="./../img/bigo.svg" alt="retournez votre téléphone" id="bigo" />
         <p>Tournez votre écran</p>
     </div>
-    <main>
+    <main class="panel-container">
         <svg viewBox="0 0 19 123" fill="none" xmlns="http://www.w3.org/2000/svg" id="navpoint">
             <a href="#recette1">
                 <circle cx="9.5" cy="9.5" r="9.5" fill="white" />
@@ -32,388 +32,399 @@
                 <circle cx="9.5" cy="113.5" r="9.5" fill="white" />
             </a>
         </svg>
-        <section class="recette" id="recette1">
-            <img src="./../img/recette_star_left.svg" alt="Étoiles gauche" id="star-left" />
-            <img src="./../img/recette_star_right.svg" alt="Étoiles droite" id="star-right" />
-            <h1 class="h1">Les recettes de Noel</h1>
-            <img src="./../img/logowhite.png" alt="logo
-                                        Leclerc" id="logo" />
-        </section>
-        <section class="recette" id="recette2">
-            <img src="./../img/biscuit.svg" alt="Biscuit" class="biscuit" />
-            <h2>Sablés de Noël</h2>
-            <div class="recette2-txt">
-                <div class="cadretitre">
-                    <h3>Ingrédients</h3>
+        <div class="panel-container">
+            <section class="recette" id="recette1">
+                <img src="./../img/recette_star_left.svg" alt="Étoiles gauche" id="star-left" />
+                <img src="./../img/recette_star_right.svg" alt="Étoiles droite" id="star-right" />
+                <h1 class="h1">Les recettes de Noel</h1>
+                <img src="./../img/logowhite.png" alt="logo
+                                            Leclerc" id="logo" />
+            </section>
+            <section class="recette" id="recette2">
+                <img src="./../img/biscuit.svg" alt="Biscuit" class="biscuit" />
+                <h2>Sablés de Noël</h2>
+                <div class="recette2-txt">
+                    <div class="cadretitre">
+                        <h3>Ingrédients</h3>
+                    </div>
+                    <div class="cadre">
+                        <ul>
+                            <li>3 verres de farine</li>
+                            <li>1 verre de sucre en poudre</li>
+                            <li>2 cuillères à soupe de canelle en poudre</li>
+                            <li>1 oeuf</li>
+                            <li>1/2 verre de poudre d'amende</li>
+                            <li>Des emporte-pièces</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cadre">
-                    <ul>
-                        <li>3 verres de farine</li>
-                        <li>1 verre de sucre en poudre</li>
-                        <li>2 cuillères à soupe de canelle en poudre</li>
-                        <li>1 oeuf</li>
-                        <li>1/2 verre de poudre d'amende</li>
-                        <li>Des emporte-pièces</li>
-                    </ul>
+                <div class="recette2-txt2">
+                    <div class="cadretitre2">
+                        <h3>Préparation</h3>
+                    </div>
+                    <div class="cadre2">
+                        <ol>
+                            <span class="recette2-0l1">
+                                <li>
+                                    Pour faire la pâte sablée : Demande à ta maman de couper le
+                                    beurre en morceaux et de le faire ramollir dans une casserole.
+                                    Verse tous les ingrédients dans un grand bol sans oublier de
+                                    casser l’œuf, ajoute le beurre ramolli puis mélange bien.
+                                </li>
+                                <li>
+                                    Demande à ta maman de faire préchauffer le four à 240°C.
+                                </li>
+                                <li>
+                                    Farine le plan de travail et étale la pâte avec un rouleau à
+                                    pâtisserie.
+                                </li>
+                            </span>
+                            <span class="recette2-0l2">
+                                <li>
+                                    Découpe les gâteaux en forme de sapin, d’étoile, …avec les
+                                    emporte-pièces..
+                                </li>
+                                <li>
+                                    Demande à ta maman de mettre les gâteaux sur la plaque du four
+                                    et de les faire cuire 15 à 20 minutes.
+                                </li>
+                                <li>
+                                    Une fois cuits, mange-les avec une boule de glace vanille,
+                                    c’est encore meilleur !
+                                </li>
+                            </span>
+                        </ol>
+                        <svg onclick="recette2btngauche()" viewBox="0 0 70 70" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" id="btnrecette2_1">
+                            <g filter="url(#filter0_d_55_201)">
+                                <circle cx="35" cy="31" r="31" fill="#F3C243" />
+                            </g>
+                            <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white" />
+                            <defs>
+                                <filter id="filter0_d_55_201" x="0" y="0" width="70" height="70"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_201" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_201"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                        <svg onclick="recette2btndroite()" viewBox="0 0 70 70" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" id="btnrecette2">
+                            <g filter="url(#filter0_d_220_56)">
+                                <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243" />
+                            </g>
+                            <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white" />
+                            <defs>
+                                <filter id="filter0_d_220_56" x="0" y="0" width="70" height="70"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <!-- <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="2"/> -->
+                                    <!-- <feComposite in2="hardAlpha" operator="out"/> -->
+                                    <!-- <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/> -->
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_56" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_56"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="recette2-txt2">
-                <div class="cadretitre2">
-                    <h3>Préparation</h3>
-                </div>
-                <div class="cadre2">
-                    <ol>
-                        <span class="recette2-0l1">
+            </section>
+            <section class="recette" id="recette3">
+                <h2>Tartines de Noël</h2>
+                <div class="recette3-txt">
+                    <ol class="recette3-txt1">
+                        <span class="recette3-0l1">
+                            <li>Beurre généreusement les tranches de brioche. Il te faut une
+                                tranche pour chaque membre de ta famille !</li>
+                            <li>Demande à ta maman de faire préchauffer le four à 180°C.</li>
                             <li>
-                                Pour faire la pâte sablée : Demande à ta maman de couper le
-                                beurre en morceaux et de le faire ramollir dans une casserole.
-                                Verse tous les ingrédients dans un grand bol sans oublier de
-                                casser l’œuf, ajoute le beurre ramolli puis mélange bien.
+                                Saupoudre de sucre en poudre chaque tartine à l’aide
+                                d’une cuiller jusqu’à recouvrir entièrement le beurre.
                             </li>
-                            <li>
-                                Demande à ta maman de faire préchauffer le four à 240°C.
-                            </li>
-                            <li>
-                                Farine le plan de travail et étale la pâte avec un rouleau à
-                                pâtisserie.
+                            <li>Avec son aide, range les tartines sur la plaque du four près du grill et laisse dorer le
+                                caramel.
                             </li>
                         </span>
-                        <span class="recette2-0l2">
-                            <li>
-                                Découpe les gâteaux en forme de sapin, d’étoile, …avec les
-                                emporte-pièces..
+                        <span class="recette3-0l2">
+                            <li>Demande à ta maman de retirer les tartines du four, mais attention à ne pas te brûler !</li>
+                            <li>Prépare un pochoir en forme de sapin : dessine un sapin sur une feuille et découpe
+                                l’intérieur de la forme</li>
+                            <li>Amuse-toi à décorer chaque tartine en saupoudrant de chocolat en poudre par-dessus le
+                                pochoir. Ça dessine ton sapin sur la tartine !</li>
+                            <li>Tu peux créer toutes les formes de pochoir que tu souhaites : étoile, lune, botte… ça va
+                                étonner tout le monde !
                             </li>
-                            <li>
-                                Demande à ta maman de mettre les gâteaux sur la plaque du four
-                                et de les faire cuire 15 à 20 minutes.
-                            </li>
-                            <li>
-                                Une fois cuits, mange-les avec une boule de glace vanille,
-                                c’est encore meilleur !
-                            </li>
-                        </span>
+    
                     </ol>
-                    <svg onclick="recette2btngauche()" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" id="btnrecette2_1">
-                        <g filter="url(#filter0_d_55_201)">
-                            <circle cx="35" cy="31" r="31" fill="#F3C243" />
+                    <ol class="recette3-txt1" id="recette3-txt-hide">
+                        <li>
+                            Beurre généreusement les tranches de brioche. Il te faut une
+                            tranche pour chaque membre de ta famille !
+                        </li>
+                        <li>Demande à ta maman de faire préchauffer le four à 180°C.</li>
+                        <li>
+                            Saupoudre largement de sucre en poudre chaque tartine à l’aide
+                            d’une cuiller jusqu’à recouvrir entièrement le beurre.
+                        </li>
+                    </ol>
+                    <svg onclick="recette3btngauche()" id="recette3-btn" viewBox="0
+                                                                                    0
+                                                                                    70
+                                                                                    70" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_55_187)">
+                            <circle cx="35" cy="31" r="31" fill="#FBDA86" />
                         </g>
-                        <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white" />
+                        <path d="M14
+                                                                                            25.1224V31V36H34.6952V46L55
+                                                                                            31L34.6952
+                                                                                            15V25.1224H14Z"
+                            fill="#512C1A" />
                         <defs>
-                            <filter id="filter0_d_55_201" x="0" y="0" width="70" height="70"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter id="filter0_d_55_187" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_201" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_201"
-                                    result="shape" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            0
+                                                                                                            127
+                                                                                                            0"
+                                    result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0
+                                                                                                                            0.25
+                                                                                                                            0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_187" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_187" result="shape" />
                             </filter>
                         </defs>
                     </svg>
-                    <svg onclick="recette2btndroite()" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" id="btnrecette2">
-                        <g filter="url(#filter0_d_220_56)">
-                            <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243" />
+                    <svg onclick="recette3btndroite()" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="recette3-btn_1">
+                        <g filter="url(#filter0_d_220_59)">
+                            <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#FBDA86" />
+                        </g>
+                        <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="#512C1A" />
+                        <defs>
+                            <filter id="filter0_d_220_59" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_59" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_59" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="recette3-txt-left">
+                    <div class="recette3-txt3">
+                        <h3>Ingrédients :</h3>
+                        <ul>
+                            <li>6 tranches de grosse brioche</li>
+                            <li>Du beurre</li>
+                            <li>6 cuillers à soupe de chocolat en poudre</li>
+                            <li>6 cuillers à soupe de sucre en poudre</li>
+                            <li>Une feuille de papier et des ciseaux</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <img src="./../img/sapin_recette.svg" alt="Sapin" id="recette3-sapin" />
+            </section>
+            <section class="recette" id="recette4">
+                <section class="up">
+                    <h2>Flocons de neige</h2>
+                    <img src="./../img/flocons.svg" alt="flocons" class="floco" />
+                    <div class="recette4-h3">
+                        <h3>Ingrédients</h3>
+                    </div>
+                    <img src="./../img/igloo.svg" alt="igloo" class="igloo" />
+                </section>
+                <section class="down">
+                    <div class="recette4-txt">
+                        <ul>
+                            <li>3 verres de farine</li>
+                            <li>1 verre de sucre en poudre</li>
+                            <li>2 cuillers à soupe de cannelle en poudre</li>
+                            <li>1 œuf</li>
+                            <li>1/2 verre de poudre d’amandes</li>
+                            <li>Des emporte-pièces</li>
+                        </ul>
+                    </div>
+    
+                    <div class="recette4-txt">
+                        <ol>
+                            <span class="recette4-0l1">
+                                <li>Mets le beurre ramolli dans une casserole.</li>
+                                <li>
+                                    Casse le chocolat blanc dans la casserole, puis ajoute les 2
+                                    cuillers à soupe de lait.
+                                </li>
+                                <li>Demande à ta maman de faire fondre le tout : il faut bien mélanger.
+                                </li>
+                            </span>
+                            <span  class="recette4-0l2">
+                                <li>Une fois que c’est fait, hors du feu, ajoute les Corn Flakes et mélange le tout.</li>
+                                <li>Sur une plaque de cuisson, fais des petits tas avec une cuiller à café.
+                                </li>
+                                <li>Mats la plaque au réfrigérateur et laisse tes flocons durcir.
+                                </li>
+                            </span>
+                        </ol>
+                    </div>
+    
+                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick="recette4btndroite()">
+                        <g filter="url(#filter0_d_221_62)">
+                            <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#317F83" />
                         </g>
                         <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white" />
                         <defs>
-                            <filter id="filter0_d_220_56" x="0" y="0" width="70" height="70"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <!-- <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="4"/>
-                            <feGaussianBlur stdDeviation="2"/> -->
-                                <!-- <feComposite in2="hardAlpha" operator="out"/> -->
-                                <!-- <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/> -->
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_56" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_56"
-                                    result="shape" />
+                            <filter id="filter0_d_221_62" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_221_62" result="shape" />
                             </filter>
                         </defs>
                     </svg>
-                </div>
-            </div>
-        </section>
-        <section class="recette" id="recette3">
-            <h2>Tartines de Noël</h2>
-            <div class="recette3-txt">
-                <ol class="recette3-txt1">
-                    <span class="recette3-0l1">
-                        <li>Beurre généreusement les tranches de brioche. Il te faut une
-                            tranche pour chaque membre de ta famille !</li>
-                        <li>Demande à ta maman de faire préchauffer le four à 180°C.</li>
-                        <li>
-                            Saupoudre de sucre en poudre chaque tartine à l’aide
-                            d’une cuiller jusqu’à recouvrir entièrement le beurre.
-                        </li>
-                        <li>Avec son aide, range les tartines sur la plaque du four près du grill et laisse dorer le
-                            caramel.
-                        </li>
-                    </span>
-                    <span class="recette3-0l2">
-                        <li>Demande à ta maman de retirer les tartines du four, mais attention à ne pas te brûler !</li>
-                        <li>Prépare un pochoir en forme de sapin : dessine un sapin sur une feuille et découpe
-                            l’intérieur de la forme</li>
-                        <li>Amuse-toi à décorer chaque tartine en saupoudrant de chocolat en poudre par-dessus le
-                            pochoir. Ça dessine ton sapin sur la tartine !</li>
-                        <li>Tu peux créer toutes les formes de pochoir que tu souhaites : étoile, lune, botte… ça va
-                            étonner tout le monde !
-                        </li>
-
-                </ol>
-                <ol class="recette3-txt1" id="recette3-txt-hide">
-                    <li>
-                        Beurre généreusement les tranches de brioche. Il te faut une
-                        tranche pour chaque membre de ta famille !
-                    </li>
-                    <li>Demande à ta maman de faire préchauffer le four à 180°C.</li>
-                    <li>
-                        Saupoudre largement de sucre en poudre chaque tartine à l’aide
-                        d’une cuiller jusqu’à recouvrir entièrement le beurre.
-                    </li>
-                </ol>
-                <svg onclick="recette3btngauche()" id="recette3-btn" viewBox="0
-                                                                                0
-                                                                                70
-                                                                                70" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_55_187)">
-                        <circle cx="35" cy="31" r="31" fill="#FBDA86" />
-                    </g>
-                    <path d="M14
-                                                                                        25.1224V31V36H34.6952V46L55
-                                                                                        31L34.6952
-                                                                                        15V25.1224H14Z"
-                        fill="#512C1A" />
-                    <defs>
-                        <filter id="filter0_d_55_187" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        0
-                                                                                                        127
-                                                                                                        0"
-                                result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="2" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix"
-                                values="0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0
-                                                                                                                        0.25
-                                                                                                                        0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_187" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_187" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-                <svg onclick="recette3btndroite()" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    id="recette3-btn_1">
-                    <g filter="url(#filter0_d_220_59)">
-                        <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#FBDA86" />
-                    </g>
-                    <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="#512C1A" />
-                    <defs>
-                        <filter id="filter0_d_220_59" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="2" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_59" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_59" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-            </div>
-            <div class="recette3-txt-left">
-                <div class="recette3-txt3">
-                    <h3>Ingrédients :</h3>
-                    <ul>
-                        <li>6 tranches de grosse brioche</li>
-                        <li>Du beurre</li>
-                        <li>6 cuillers à soupe de chocolat en poudre</li>
-                        <li>6 cuillers à soupe de sucre en poudre</li>
-                        <li>Une feuille de papier et des ciseaux</li>
-                    </ul>
-                </div>
-            </div>
-
-            <img src="./../img/sapin_recette.svg" alt="Sapin" id="recette3-sapin" />
-        </section>
-        <section class="recette" id="recette4">
-            <section class="up">
-                <h2>Flocons de neige</h2>
-                <img src="./../img/flocons.svg" alt="flocons" class="floco" />
-                <div class="recette4-h3">
-                    <h3>Ingrédients</h3>
-                </div>
-                <img src="./../img/igloo.svg" alt="igloo" class="igloo" />
-            </section>
-            <section class="down">
-                <div class="recette4-txt">
-                    <ul>
-                        <li>3 verres de farine</li>
-                        <li>1 verre de sucre en poudre</li>
-                        <li>2 cuillers à soupe de cannelle en poudre</li>
-                        <li>1 œuf</li>
-                        <li>1/2 verre de poudre d’amandes</li>
-                        <li>Des emporte-pièces</li>
-                    </ul>
-                </div>
-
-                <div class="recette4-txt">
-                    <ol>
-                        <span class="recette4-0l1">
-                            <li>Mets le beurre ramolli dans une casserole.</li>
-                            <li>
-                                Casse le chocolat blanc dans la casserole, puis ajoute les 2
-                                cuillers à soupe de lait.
-                            </li>
-                            <li>Demande à ta maman de faire fondre le tout : il faut bien mélanger.
-                            </li>
-                        </span>
-                        <span  class="recette4-0l2">
-                            <li>Une fois que c’est fait, hors du feu, ajoute les Corn Flakes et mélange le tout.</li>
-                            <li>Sur une plaque de cuisson, fais des petits tas avec une cuiller à café.
-                            </li>
-                            <li>Mats la plaque au réfrigérateur et laisse tes flocons durcir.
-                            </li>
-                        </span>
-                    </ol>
-                </div>
-
-                <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick="recette4btndroite()">
-                    <g filter="url(#filter0_d_221_62)">
-                        <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#317F83" />
-                    </g>
-                    <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white" />
-                    <defs>
-                        <filter id="filter0_d_221_62" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_221_62" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-
-                <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick=" recette4btngauche()">
-                    <g filter="url(#filter0_d_55_186)">
-                        <circle cx="35" cy="31" r="31" fill="#317F83" />
-                    </g>
-                    <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white" />
-                    <defs>
-                        <filter id="filter0_d_55_186" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_186" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-            </section>
-        </section>
-        <section class="recette" id="recette5">
-            <h2>Truffes en chocolat</h2>
-            <div class="ingredients">
-                <img src="./../img/ingredients5.svg" alt="cadre" id="ingredientcadre" />
-                <div id="txt"></div>
-            </div>
-            <div class="preparation">
-                <div class="recette5h3">
-                    <h3>Préparation</h3>
-                </div>
-                <div class="txtprepa5">
-                    <ol>
-                        <li>
-                            Demande à ta maman de faire fondre la tablette de chocolat au
-                            bain-marie ou au micro-ondes.
-                        </li>
-                        <li>
-                            Lorsque tout est fondu, ajoute hors du feu le jaune d’œuf et
-                            mélange bien.
-                        </li>
-                        <li>
-                            Laisse refroidir, puis avec l’aide de ta maman, mets au frais quelques heures.
-                        </li>
-                        <li>
-                            Lorsque c’est froid, forme des petites boules avec tes mains, et roule-les dans le cacao et le sucre en poudre.
-                        </li>
-                    </ol>
-                    <!-- <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn">
-                        <g filter="url(#filter0_d_220_56)">
-                        <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243"/>
+    
+                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="recette4-btn" onclick=" recette4btngauche()">
+                        <g filter="url(#filter0_d_55_186)">
+                            <circle cx="35" cy="31" r="31" fill="#317F83" />
                         </g>
-                        <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white"/>
+                        <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white" />
                         <defs>
-                        <filter id="filter0_d_220_56" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_56"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_56" result="shape"/>
-                        </filter>
+                            <filter id="filter0_d_55_186" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_186" result="shape" />
+                            </filter>
                         </defs>
-                        </svg>
-                        <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn1">
-                            <g filter="url(#filter0_d_55_201)">
-                            <circle cx="35" cy="31" r="31" fill="#F3C243"/>
+                    </svg>
+                </section>
+            </section>
+            <section class="recette" id="recette5">
+                <h2>Truffes en chocolat</h2>
+                <div class="ingredients">
+                    <img src="./../img/ingredients5.svg" alt="cadre" id="ingredientcadre" />
+                    <div id="txt"></div>
+                </div>
+                <div class="preparation">
+                    <div class="recette5h3">
+                        <h3>Préparation</h3>
+                    </div>
+                    <div class="txtprepa5">
+                        <ol>
+                            <li>
+                                Demande à ta maman de faire fondre la tablette de chocolat au
+                                bain-marie ou au micro-ondes.
+                            </li>
+                            <li>
+                                Lorsque tout est fondu, ajoute hors du feu le jaune d’œuf et
+                                mélange bien.
+                            </li>
+                            <li>
+                                Laisse refroidir, puis avec l’aide de ta maman, mets au frais quelques heures.
+                            </li>
+                            <li>
+                                Lorsque c’est froid, forme des petites boules avec tes mains, et roule-les dans le cacao et le sucre en poudre.
+                            </li>
+                        </ol>
+                        <!-- <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn">
+                            <g filter="url(#filter0_d_220_56)">
+                            <circle cx="35" cy="31" r="31" transform="rotate(-180 35 31)" fill="#F3C243"/>
                             </g>
-                            <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white"/>
+                            <path d="M56 36.8776V31V26L35.3048 26V16L15 31L35.3048 47V36.8776H56Z" fill="white"/>
                             <defs>
-                            <filter id="filter0_d_55_201" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter id="filter0_d_220_56" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>
                             <feGaussianBlur stdDeviation="2"/>
                             <feComposite in2="hardAlpha" operator="out"/>
                             <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_201"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_201" result="shape"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_56"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_56" result="shape"/>
                             </filter>
                             </defs>
-                            </svg> -->
-                            
+                            </svg>
+                            <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="recette5btn1">
+                                <g filter="url(#filter0_d_55_201)">
+                                <circle cx="35" cy="31" r="31" fill="#F3C243"/>
+                                </g>
+                                <path d="M14 25.1224V31V36H34.6952V46L55 31L34.6952 15V25.1224H14Z" fill="white"/>
+                                <defs>
+                                <filter id="filter0_d_55_201" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_55_201"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_201" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg> -->
+                                
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </main>
+
+    <div class="section-position-container">
+        <div class="section-position section-position-1"></div>
+        <div class="section-position section-position-2"></div>
+        <div class="section-position section-position-3"></div>
+        <div class="section-position section-position-4"></div>
+    </div>
     <script src="./../js/script.js"></script>
+    <script src="./../js/scroll.js"></script>
 </body>
 
 </html>
