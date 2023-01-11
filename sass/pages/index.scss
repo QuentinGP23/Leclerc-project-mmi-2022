@@ -6,7 +6,27 @@
 }
 
 .piece2{
-    background-color: green;
+    background-image: url(/img/piece2.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .bougie{
+        @include bougie;
+        animation: bougie 2s ease 0s infinite normal forwards;
+    }
+    .bougieeffect{
+        @include bougie;
+        animation: bougieeffect 2s ease 0s infinite normal forwards;
+        }
+    #bougie1{
+        margin-left: 21.5vw;
+    }
+    #bougie2{
+        margin-left: 22;
+    }
+    #bougie3{
+        margin-left: 22%;
+    }
 }
 
 .piece3{
@@ -15,4 +35,29 @@
 
 .piece4{
     background-color: yellow;
+}
+
+@keyframes bougie {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@keyframes bougieeffect {
+	0%,
+	50%,
+	100% {
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		opacity: 1;
+	}
 }
