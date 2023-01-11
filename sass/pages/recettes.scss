@@ -519,7 +519,6 @@
                             margin: -15.6% 0% 0% 15%;
                             z-index: 0;
                             ul{
-                                transition: all ease-in-out 0.3s;
                                 transition-delay: .3s;
                                 position: absolute;
                                 margin: 3% 0% 0% 0%;
@@ -530,6 +529,7 @@
                                 font-size: 1.6vw;
                                 line-height: 1.5;
                                 display: none;
+                                padding: 5% 5% 0 20%;
                             }
                         }
                         .recette5visible{
@@ -566,16 +566,16 @@
                         background-position: center;
                         position: relative;
                         width: 45%;
-                        top: -3%;
+                        bottom: 10%;
                         height: 110%;
                         display: flex;
                         justify-content: center;
-                        align-items: flex-start;
-                        
+                        align-items: flex-end;
                         h3{
                             @include recetteh3;
                             color: #564D45;
-                            top: -8%;
+                            bottom: 21%;
+                        }
                         }
                     }
                     .txtprepa5{

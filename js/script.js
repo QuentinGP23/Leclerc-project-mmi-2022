@@ -47,9 +47,24 @@ function recette4btndroite(){
 const recette5div = document.querySelector('#recette5txt');
 const recette5txt = document.querySelector('#ulrecette5');
 const recette5btn = document.querySelector('#recette5fleche');
-function recette5fleche(){
-    recette5txt.classList.toggle("recette5visible");
-    recette5btn.classList.toggle("btntranslate");
-    recette5div.classList.toggle("changewidth");
-}
+let isOpen = false;
+console.log(isOpen);
+recette5btn.addEventListener('click', () => {
+    if (!isOpen) {
+        recette5div.classList.add('changewidth');
+        recette5btn.classList.add('btntranslate');
+        recette5div.addEventListener('transitionend', () => {
+            recette5txt.classList.add('recette5visible'); 
+        },{once:true}
+        );
+        isOpen = true;
+        console.log(isOpen);
+    } else {
+        recette5txt.classList.remove('recette5visible');
+        recette5div.classList.remove('changewidth');
+        recette5btn.classList.remove('btntranslate');
+        isOpen = false;
+        console.log(isOpen);
+    }
+});
 // fin recette 5
