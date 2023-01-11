@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/QuentinGP23/Leclerc-project-mmi-2022#readme",
   "dependencies": {
-    "gsap": "^3.11.3",
+    "aos": "^2.3.4",
     "sass": "^1.57.1"
   }
 }
