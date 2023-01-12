@@ -22,7 +22,7 @@ body{
     width: 70%;
     height: auto;
     margin-bottom: 10%;
-    animation: shakeyourbooty 2.5s ease-in-out 0s infinite normal none;
+    animation: shakeyourbooty 2.5s ease-in-out infinite;
 }
 @keyframes shakeyourbooty {
 	0%,
@@ -32,27 +32,27 @@ body{
 	}
 
 	10% {
-		transform: rotate(8deg);
+		transform: rotate(6deg);
 	}
 
 	20%,
 	40%,
 	60% {
-		transform: rotate(-10deg);
+		transform: rotate(-8deg);
 	}
 
 	30%,
 	50%,
 	70% {
-		transform: rotate(10deg);
+		transform: rotate(8deg);
 	}
 
 	80% {
-		transform: rotate(-8deg);
+		transform: rotate(-6deg);
 	}
 
 	90% {
-		transform: rotate(8deg);
+		transform: rotate(6deg);
 	}
 }
 

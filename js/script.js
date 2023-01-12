@@ -1,7 +1,20 @@
-// recette 2
+
+//recettes
 const recette2txt1 = document.querySelector('.recette2-0l1');
 const recette2txt2 = document.querySelector('.recette2-0l2');
 
+const recette3txt1 = document.querySelector('.recette3-0l1');
+const recette3txt2 = document.querySelector('.recette3-0l2');
+
+const recette4txt1 = document.querySelector('.recette4-0l1');
+const recette4txt2 = document.querySelector('.recette4-0l2');
+
+const recette5div = document.querySelector('#recette5txt');
+const recette5txt = document.querySelector('#ulrecette5');
+const recette5btn = document.querySelector('#recette5fleche');
+let isOpen = false;
+
+// recette 2
 function recette2btngauche() {
     recette2txt2.style.display = "block";
     recette2txt1.style.display = "none";
@@ -14,8 +27,6 @@ function recette2btndroite(){
 // fin recette 2
 
 // recette 3
-const recette3txt1 = document.querySelector('.recette3-0l1');
-const recette3txt2 = document.querySelector('.recette3-0l2');
 
 function recette3btngauche() {
     recette3txt2.style.display = "block";
@@ -29,9 +40,6 @@ function recette3btndroite(){
 // fin recette 3
 
 // recette 4
-const recette4txt1 = document.querySelector('.recette4-0l1');
-const recette4txt2 = document.querySelector('.recette4-0l2');
-
 function recette4btngauche() {
     recette4txt2.style.display = "block";
     recette4txt1.style.display = "none";
@@ -44,11 +52,6 @@ function recette4btndroite(){
 // fin recette 4
 
 // recette 5 
-const recette5div = document.querySelector('#recette5txt');
-const recette5txt = document.querySelector('#ulrecette5');
-const recette5btn = document.querySelector('#recette5fleche');
-let isOpen = false;
-console.log(isOpen);
 recette5btn.addEventListener('click', () => {
     if (!isOpen) {
         recette5div.classList.add('changewidth');
@@ -58,13 +61,11 @@ recette5btn.addEventListener('click', () => {
         },{once:true}
         );
         isOpen = true;
-        console.log(isOpen);
     } else {
         recette5txt.classList.remove('recette5visible');
         recette5div.classList.remove('changewidth');
         recette5btn.classList.remove('btntranslate');
         isOpen = false;
-        console.log(isOpen);
     }
 });
 // fin recette 5

@@ -10,23 +10,194 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    .bougie{
-        @include bougie;
-        animation: bougie 2s ease 0s infinite normal forwards;
-    }
-    .bougieeffect{
-        @include bougie;
-        animation: bougieeffect 2s ease 0s infinite normal forwards;
+    .piece2popup{
+        position: absolute;
+        z-index: 999;
+        width: 20%;
+        margin-top: 47vh;
+        opacity: 0;
+        p{
+            position: absolute;
+            font-family: "Bitter",serif;
+            color: #2D6C27;
+            font-style: normal;
+            font-size: 1.4vw;
+            font-weight: 700;
+            margin-left: 51%;
         }
-    #bougie1{
+        svg{
+            position: absolute;
+            width: 3vw;
+            margin-left: 66%;
+            margin-top: 21%;
+            animation: bouncefleche 2.5s ease-in-out 0s infinite normal forwards;
+        }
+        button{
+            position: absolute;
+            font-family: "Bitter",serif;
+            background-color: #F65A5A;
+            border: none;
+            font-size: 1vw;
+            width: 9vw;
+            height: 4vh;
+            margin-top: 42%;
+            color: white;
+            margin-left: 50%;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                transform: scale(0.9,0.9);
+            }
+        }
+        img{
+            width: 100%;
+            position:absolute;
+        };
+    }
+    .ampoule{
+        width: 100%;
+        position: absolute
+    }
+    .bouffe{
+        margin-top: 73.5vh;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .lutin{
+        z-index: 3;
+        position: absolute;
+    }
+    #popupsable{
+        margin-left: 19vw;
+    }
+
+    #popuptartine{
+        margin-left: 28vw;
+        p{
+            font-size: 1.3vw;
+            margin-left: 49%;
+        }
+    }
+
+    #popupflocon{
+        margin-left: 38vw;
+        p{
+            font-size: 1.3vw;
+            margin-left: 46%;
+        }
+    }
+
+    #popuptruffe{
+        margin-left: 45.5vw;
+        p{
+            font-size: 1.25vw;
+            margin-left: 46%;
+        }
+    }
+
+    #biscuit{
+        width: 2vw;
+        margin-left: 17.2vw;
+        transform: rotate(45deg);
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2,1.2) rotate(45deg);
+            filter: drop-shadow(0px 0px 15px #F8FD00);
+        }
+    }
+    
+    #tartine{
+        margin-left: 25vw;
+        width: 4vw;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2,1.2);
+            filter: drop-shadow(0px 0px 15px #F8FD00);
+        }
+    }
+
+    #flocon{
+        margin-left: 34vw;
+        width: 5vw;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2,1.2);
+            filter: drop-shadow(0px 0px 15px #F8FD00);
+        }
+    }
+
+    #truffe{
+        margin-left: 43.5vw;
+        width: 3vw;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2,1.2);
+            filter: drop-shadow(0px 0px 15px #F8FD00);
+        }
+    }
+
+    #ampouleeffect{
+        z-index: 1;
+        animation: ampouleeffect 3s ease 0s infinite normal forwards;
+    }
+
+    #demilutin{
+        width: 4vw;
+        margin-top: 51.9vh;
+        margin-left: 26vw;
+        animation: demilutin 2s linear 0s infinite normal forwards;
+    }
+
+    #demilutineffect{
+        width: 4vw;
+        margin-top: 51.9vh;
+        margin-left: 26vw;
+        animation: lutineffect 2s linear 0s infinite normal forwards;
+    }
+    #lutin{
+        width: 5.5vw;
+        margin-top: 65.1vh;
+        margin-left: 87vw;
+        animation: lutin 2s linear 0s infinite normal forwards;
+    }
+
+    #lutineffect{
+        width: 5.5vw;
+        margin-top: 65vh;
+        margin-left: 87vw;
+        animation: lutineffect 2s linear 0s infinite normal forwards;
+    }
+
+    #divbougie1{
+        @include bougie;
         margin-left: 21.5vw;
     }
-    #bougie2{
-        margin-left: 22;
+
+    #divbougie2{
+        @include bougie;
+        margin-left: 30.5vw;
+        
     }
-    #bougie3{
-        margin-left: 22%;
+
+    #divbougie3{
+        @include bougie;
+        margin-left: 38.5vw;
     }
+}
+
+.bougie{
+    width: 3vw;
+}
+
+.bougieeffect{
+    position: absolute;
+    margin-top: -16%;
+    width: 1.5vw;
+    animation: bougieeffect 3s ease 0s infinite normal forwards;
 }
 
 .piece3{
@@ -37,7 +208,20 @@
     background-color: yellow;
 }
 
-@keyframes bougie {
+@keyframes bougieeffect {
+	0%,
+	50%,
+	100% {
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		opacity: .8;
+	}
+}
+
+@keyframes ampoule {
 	0%,
 	50%,
 	100% {
@@ -49,7 +233,8 @@
 		opacity: 0;
 	}
 }
-@keyframes bougieeffect {
+
+@keyframes ampouleeffect {
 	0%,
 	50%,
 	100% {
@@ -59,5 +244,99 @@
 	25%,
 	75% {
 		opacity: 1;
+	}
+}
+
+@keyframes demilutin {
+	0%,
+	50% {
+		opacity: 1;
+	}
+
+	51%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes demilutineffect {
+	0%,
+	50% {
+		opacity: 0;
+	}
+
+	51%,
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes lutin{
+	0%,
+	50% {
+		opacity: 1;
+	}
+
+	50.0001%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes lutineffect{
+	0%,
+	50% {
+		opacity: 0;
+	}
+
+	50.0001%,
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bouncefleche {
+	5% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-12%);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6%);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6%);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-3%);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-2.4%);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0%);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }

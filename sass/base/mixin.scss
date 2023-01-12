@@ -42,7 +42,11 @@
     margin: 0;
 }
 @mixin bougie{
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-        width: 3%;
-        margin-top: 33vw;
+    margin-top: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
