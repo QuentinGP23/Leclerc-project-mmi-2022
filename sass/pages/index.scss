@@ -300,17 +300,146 @@
         position: absolute;
         width: 100%;
     }
+    .lutin{
+        z-index: 3;
+        position: absolute;
+    }
+    .popuprecette3{
+        position: absolute;
+        width: 35vw;
+        height: 45vh;
+        background: linear-gradient(180deg, #A43835 0%, #6A150F 100%);
+        border-radius: 1vw;
+        z-index: 999;
+        margin-top: 9%;
+        margin-left: 18%;
+        img{
+            position: absolute;
+            width: 40%;
+            margin-top: 11%;
+            margin-left: 8%;
+        }
+        span{
+            position: absolute;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            margin-left: 53%;
+            margin-top: 5%;
+            h3{
+                font-family: "jsMath-cmti10";
+                font-style: italic;
+                font-weight: 500;
+                font-size: 2.2vw;
+                color: #ffb700;
+                text-shadow: 0px 0.5vh 3.59246px rgb(0 0 0 / 35%);
+                width: fit-content;
+                &:first-child{
+                    margin-right: 5%;
+                }
+            }
+        }
+        p{
+            position: absolute;
+            font-family: "Rounded Mplus 1c";
+            font-style: normal;
+            font-weight: 500;
+            font-size: .9vw;
+            width: 44%;
+            color: snow;
+            margin-top: 20%;
+            margin-left: 53%;
+            text-shadow: 0px 0.2vh 3.59246px rgb(0 0 0 / 25%);
+        }
+        button{
+            position: absolute;
+            width: 20%;
+            height: 14%;
+            margin-left: 70%;
+            margin-top: 44%;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.2vw;
+            background: linear-gradient(180deg, #F6D98D 0%, #FFB700 100%);
+            color: #731A15;
+            border: 0;
+            box-shadow: 0px 0.2vw 0.1vw rgb(0 0 0 / 35%);
+            border-radius: 0.8vw;
+            transition: all ease-in-out .3s;
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
+        }
+        #neige1{
+            position: absolute;
+            width: 60%;
+            margin-top: -5%;
+            margin-left: -3.7%;
+            z-index: 10;
+        }
+        #neige2{
+            position: absolute;
+            width: 37%;
+            margin-top: 50%;
+            margin-left: -4.3%;
+            z-index: 10;
+        }
+        #croix{
+            position: absolute;
+            z-index: 10;
+            margin-left: 93%;
+            margin-top: 3%;
+            width: 3%;
+            height: fit-content;
+            transition: all ease-in-out .3s;
+            &:hover{
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+    
+    #demilutin1{
+        width: 5vw;
+        margin-top: 57.3vh;
+        margin-left: 29vw;
+        animation: demilutin 2s linear 0s infinite normal forwards;
+    }
+
+    #demilutineffect1{
+        width: 5vw;
+        margin-top: 57.3vh;
+        margin-left: 29vw;
+        animation: lutineffect 2s linear 0s infinite normal forwards;
+    }
+
+    #demilutin2{
+        width: 4.9vw;
+        margin-top: 56.5vh;
+        margin-left: 54vw;
+        animation: demilutin 2s linear 0s infinite normal forwards;
+    }
+
+    #demilutineffect2{
+        width: 4.9vw;
+        margin-top: 56.5vh;
+        margin-left: 54vw;
+        animation: lutineffect 2s linear 0s infinite normal forwards;
+    }
+
     #start{
         position: absolute;
         z-index: 5;
         margin-left: 91vw;
         margin-top: 79.2vh;
+        width: 2.2vw;
     }
     #stop{
         position: absolute;
         z-index: 5;
         margin-left: 91vw;
         margin-top: 72.2vh;
+        width: 2.2vw;
     }
 
     #entreecadeau{
@@ -325,6 +454,11 @@
         animation: ampouleeffect 3s ease 0s infinite normal forwards;
     }
 }
+
+// .piece4{
+    
+// }
+
 @keyframes bougieeffect {
 	0%,
 	50%,
