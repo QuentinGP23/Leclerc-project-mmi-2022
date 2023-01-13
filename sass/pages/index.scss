@@ -15,7 +15,7 @@
         z-index: 999;
         width: 20%;
         margin-top: 47vh;
-        opacity: 0;
+        display: none;
         p{
             position: absolute;
             font-family: "Bitter",serif;
@@ -97,7 +97,7 @@
 
     #biscuit{
         width: 2vw;
-        margin-left: 17.2vw;
+        margin-left: 16.2vw;
         transform: rotate(45deg);
         transition: all ease-in-out 0.3s;
         cursor: pointer;
@@ -108,7 +108,7 @@
     }
     
     #tartine{
-        margin-left: 25vw;
+        margin-left: 24.4vw;
         width: 4vw;
         transition: all ease-in-out 0.3s;
         cursor: pointer;

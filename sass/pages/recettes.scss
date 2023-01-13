@@ -543,6 +543,7 @@
                             position: absolute;
                             height: 5.2vw;
                             margin: -11% 0% 0% 15.2%;
+                            cursor: pointer;
                         }
                         .btntranslate{
                             margin: -11% 0% 0% 32.8% !important;
@@ -574,7 +575,7 @@
                         h3{
                             @include recetteh3;
                             color: #564D45;
-                            bottom: 36%;
+                            bottom: 25%;
                         }
                     }
                     .txtprepa5{

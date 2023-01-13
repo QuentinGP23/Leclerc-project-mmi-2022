@@ -2,44 +2,44 @@
 const biscuit = document.getElementById("biscuit");
 const popupbiscuit = document.getElementById("popupsable");
 
-biscuit.addEventListener('mouseenter', () => {
-    popupbiscuit.style.opacity="1";
+biscuit.addEventListener('click', () => {
+    popupbiscuit.style.display="block";
 });
 
-popupbiscuit.addEventListener('mouseleave', () => {
-    popupbiscuit.style.opacity="0";
-});
+// popupbiscuit.addEventListener('mouseleave', () => {
+//     popupbiscuit.style.display="none";
+// });
 
 const popuptartine = document.getElementById("popuptartine");
 const tartine = document.getElementById("tartine");
 
-tartine.addEventListener('mouseenter', () => {
-    popuptartine.style.opacity="1";
+tartine.addEventListener('click', () => {
+    popuptartine.style.display="block";
 });
 
-popuptartine.addEventListener('mouseleave', () => {
-    console.log("ntm");
-    popuptartine.style.opacity="0";
-});
+// popuptartine.addEventListener('mouseleave', () => {
+//     console.log("ntm");
+//     popuptartine.style.display="none";
+// });
 
 const popupflocon = document.getElementById("popupflocon");
 const flocon = document.getElementById("flocon");
 
-flocon.addEventListener('mouseenter', () => {
-    popupflocon.style.opacity="1";
+flocon.addEventListener('click', () => {
+    popupflocon.style.display="block";
 });
 
-popupflocon.addEventListener('mouseleave', () => {
-    popupflocon.style.opacity="0";
-});
+// popupflocon.addEventListener('mouseleave', () => {
+//     popupflocon.style.display="none";
+// });
 
 const popuptruffe = document.getElementById("popuptruffe");
 const truffe = document.getElementById("truffe");
 
-truffe.addEventListener('mouseenter', () => {
-    popuptruffe.style.opacity="1";
+truffe.addEventListener('click', () => {
+    popuptruffe.style.display="block";
 });
 
-popuptruffe.addEventListener('mouseleave', () => {
-    popuptruffe.style.opacity="0";
-});
+// popuptruffe.addEventListener('mouseleave', () => {
+//     popuptruffe.style.display="none";
+// });
