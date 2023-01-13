@@ -10,6 +10,17 @@ const truffe = document.getElementById("truffe");
 const fenetre = document.getElementById("close");
 const livre = document.getElementById("livre");
 const popuplivre = document.getElementById("popuplivre");
+const nounours = document.getElementById("nounours");
+const popupnounours = document.getElementById("popuprecette3");
+const croixours = document.getElementById("croix");
+const fenetre1 = document.getElementById("close1");
+const fusee = document.getElementById("fusee");
+const popuprecette3fusee = document.getElementById("popuprecette3fusee");
+const croixfusee = document.getElementById("croixfusee");
+const canard = document.getElementById("canard");
+const popuprecette3canard = document.getElementById("popuprecette3canard");
+const croixcanard = document.getElementById("croixcanard");
+
 
 biscuit.addEventListener('click', function(event){
     popupbiscuit.style.display="block";
@@ -66,4 +77,49 @@ livre.addEventListener('click', function(event){
 fenetre.addEventListener('click', function(event){
     popuplivre.style.display="none";
     fenetre.style.display="none";
+});
+
+nounours.addEventListener('click', function(event){
+    popupnounours.style.display="block";
+    fenetre1.style.display="block";
+});
+
+fenetre1.addEventListener('click', function(event){
+    popupnounours.style.display="none";
+    fenetre1.style.display="none";
+});
+
+croixours.addEventListener('click', function(event){
+    popupnounours.style.display="none";
+    fenetre1.style.display="none";
+});
+
+fusee.addEventListener('click', function(event){
+    popuprecette3fusee.style.display="block";
+    fenetre1.style.display="block";
+});
+
+fenetre1.addEventListener('click', function(event){
+    popuprecette3fusee.style.display="none";
+    fenetre1.style.display="none";
+});
+
+croixfusee.addEventListener('click', function(event){
+    popuprecette3fusee.style.display="none";
+    fenetre1.style.display="none";
+});
+
+canard.addEventListener('click', function(event){
+    popuprecette3canard.style.display="block";
+    fenetre1.style.display="block";
+});
+
+fenetre1.addEventListener('click', function(event){
+    popuprecette3canard.style.display="none";
+    fenetre1.style.display="none";
+});
+
+croixcanard.addEventListener('click', function(event){
+    popuprecette3canard.style.display="none";
+    fenetre1.style.display="none";
 });

@@ -2,7 +2,55 @@
     @include fullpagediv;
 }
 .piece1{
-    background-color: blue;
+    background-image: url(/img/piece1.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .menu{
+        position: absolute;
+        width: 10vw;
+        height: fit-content;
+        transform: rotate(-23.97deg);
+        margin-top: 42vh;
+        margin-left: 4.6vw;
+        text-align: center;
+        transition: all ease-in-out .3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1,1.1) rotate(-23.97deg);
+            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
+                drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
+                drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
+                drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+        }
+        p{
+            font-size: 3vw;
+            font-family: "Pridi", serif;
+            color: #162053;
+            cursor: pointer;
+        }
+    }
+    #title{
+        position: absolute;
+        z-index: 5;
+        width: 71vw;
+        margin-left: 15.5vw;
+        margin-top: 40vh;
+    }
+    #piece1ampoule{
+        position: absolute;
+        width: 9vw;
+        margin-top: 41vh;
+        margin-left: 4vw;
+    }
+    #piece1ampouleeffect{
+        position: absolute;
+        width: 9vw;
+        margin-top: 41vh;
+        margin-left: 4vw;
+        z-index: 1;
+        animation: ampouleeffect 3s ease 0s infinite normal forwards;
+    }
 }
 
 .piece2{
@@ -209,6 +257,7 @@
         margin: 36.5vh 0vw 0vh 37.8vw;
         width: 17.5vw;
         transition: all ease-in-out 0.1s;
+        cursor: pointer;
         &:hover{
             filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
                     drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
@@ -272,10 +321,6 @@
     animation: bougieeffect 3s ease 0s infinite normal forwards;
 }
 
-.piece3{
-    background-color: red;
-}
-
 .piece4{
     background-color: yellow;
 }
@@ -313,6 +358,7 @@
         z-index: 999;
         margin-top: 9%;
         margin-left: 18%;
+        display: none;
         img{
             position: absolute;
             width: 40%;
@@ -367,6 +413,7 @@
             box-shadow: 0px 0.2vw 0.1vw rgb(0 0 0 / 35%);
             border-radius: 0.8vw;
             transition: all ease-in-out .3s;
+            cursor: pointer;
             &:hover{
                 transform: scale(1.1, 1.1);
             }
@@ -385,20 +432,76 @@
             margin-left: -4.3%;
             z-index: 10;
         }
-        #croix{
+        .croix{
             position: absolute;
             z-index: 10;
             margin-left: 93%;
             margin-top: 3%;
             width: 3%;
             height: fit-content;
-            transition: all ease-in-out .3s;
-            &:hover{
-                transform: scale(1.2, 1.2);
-            }
+            cursor: pointer;
         }
     }
+
+    #close1{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        display: none;
+    }
     
+    #canard{
+        position: absolute;
+        width: 3.3vw;
+        z-index: 99;
+        margin-left: 29vw;
+        margin-top: 76vh;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
+                    drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+        }
+    }
+
+    #fusee{
+        position: absolute;
+        width: 2.8vw;
+        z-index: 99;
+        margin-left: 23vw;
+        margin-top: 73vh;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
+                    drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+        }
+    }
+
+    #nounours{
+        position: absolute;
+        width: 3.5vw;
+        z-index: 99;
+        margin-left: 19vw;
+        margin-top: 69vh;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
+                    drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+        }
+    }
+
     #demilutin1{
         width: 5vw;
         margin-top: 57.3vh;
@@ -433,6 +536,7 @@
         margin-left: 91vw;
         margin-top: 79.2vh;
         width: 2.2vw;
+        cursor: pointer;
     }
     #stop{
         position: absolute;
@@ -440,6 +544,7 @@
         margin-left: 91vw;
         margin-top: 72.2vh;
         width: 2.2vw;
+        cursor: pointer;
     }
 
     #entreecadeau{
@@ -449,9 +554,33 @@
         margin-top: 71vh;
         width: 4vw;
     }
+    #gifteffect{
+        position: absolute;
+        width: 16.8vw;
+        opacity: 0;
+        z-index: 5;
+        margin-top: 50.9vh;
+        margin-left: 59.5vw;
+        transition: all ease-in-out .5s;
+        cursor: pointer;
+        &:hover{
+            opacity: .80;
+        }
+    }
     #ampouleeffect{
         z-index: 1;
         animation: ampouleeffect 3s ease 0s infinite normal forwards;
+    }
+    #popuprecette3fusee{
+        margin-left: 24%;
+        margin-top: 10%;
+    }
+    #popuprecette3canard{
+        margin-left: 30%;
+        margin-top: 12%;
+        button{
+            margin-top: 49%;
+        }
     }
 }
 
