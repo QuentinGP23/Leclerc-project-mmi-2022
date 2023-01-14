@@ -1,0 +1,50 @@
+.bodyntm{
+    height: 200vh;
+    background-image: url('/img/fondcatalogue.svg');
+    .headerneige{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo{
+        position: absolute;
+        z-index: 2;
+        margin-left: 5%;
+        margin-top: 1%;
+        width: 15%;
+    }
+    .toggle{
+        position: absolute;
+        z-index: 3;
+        margin-top: 1.5%;
+        margin-left: 90%;
+        width: 4.5vw;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+    .txtmenu{
+        position: absolute;
+        z-index: 3;
+        font-family: "Pridi";
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 400;
+        color: #E9861B;
+        margin-top: 2%;
+        margin-left: 83.5%;
+    }
+    #openmenu{
+        font-size: 2vw;
+    }
+    #cataloguepdf{
+        position: absolute;
+        width: 65%;
+        height: 146%;
+        margin-top: 20%;
+        margin-left: 17.85%;
+        z-index: 10;
+    }
+}

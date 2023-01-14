@@ -1,4 +1,7 @@
     body{
+        ::-webkit-scrollbar {
+            opacity: 0;
+        }  
         main{
             .section-position {
                 width: 2vw;
@@ -624,6 +627,3 @@
             }
         }
     }
-::-webkit-scrollbar {
-    display: none;
-}

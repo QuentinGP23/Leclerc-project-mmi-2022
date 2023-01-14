@@ -1,0 +1,35 @@
+.mentionlegale{
+    position: absolute;
+    z-index: 10;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 17%;
+    
+    h1{
+        font-family: 'Home Christmas';
+        font-size: 7vw;
+        margin: 0;
+        font-weight: 400;
+        color: #564D45;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    h3{
+        font-family: 'Playball';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        color: rgb(35, 10, 10);
+    }
+    section{
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1vw;
+        color: #564D45;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(35, 10, 10);
+    }
+}

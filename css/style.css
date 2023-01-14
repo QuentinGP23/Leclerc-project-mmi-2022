@@ -191,6 +191,9 @@ body {
   background: #da1e62;
 }
 
+body ::-webkit-scrollbar {
+  opacity: 0;
+}
 body main .section-position {
   width: 2vw;
   height: 2vw;
@@ -854,10 +857,6 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .piece {
   position: relative;
   width: 100%;
@@ -890,6 +889,9 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
 }
 .piece1 .menu p:hover {
   transform: scale(1.1, 1.1);
+}
+.piece1 .bignav420 {
+  font-size: 3vw !important;
 }
 .piece1 #title {
   position: absolute;
@@ -1413,6 +1415,28 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   margin-top: 49%;
 }
 
+.piece4 {
+  background-image: url(/img/piece4.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.piece4 .ampoule {
+  position: absolute;
+  width: 100%;
+}
+.piece4 #ampouleeffect {
+  z-index: 1;
+  animation: ampouleeffect 3s ease infinite;
+}
+.piece4 #perenoel {
+  position: absolute;
+  z-index: 5;
+  width: 16.5vw;
+  margin-top: 49vh;
+  margin-left: 38vw;
+}
+
 @keyframes glow {
   0% {
     filter: none;
@@ -1523,6 +1547,91 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+.bodyntm {
+  height: 200vh;
+  background-image: url("/img/fondcatalogue.svg");
+}
+.bodyntm .headerneige {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.bodyntm .logo {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 15%;
+}
+.bodyntm .toggle {
+  position: absolute;
+  z-index: 3;
+  margin-top: 1.5%;
+  margin-left: 90%;
+  width: 4.5vw;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.bodyntm .toggle:hover {
+  transform: scale(1.1, 1.1);
+}
+.bodyntm .txtmenu {
+  position: absolute;
+  z-index: 3;
+  font-family: "Pridi";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  color: #E9861B;
+  margin-top: 2%;
+  margin-left: 83.5%;
+}
+.bodyntm #openmenu {
+  font-size: 2vw;
+}
+.bodyntm #cataloguepdf {
+  position: absolute;
+  width: 65%;
+  height: 146%;
+  margin-top: 20%;
+  margin-left: 17.85%;
+  z-index: 10;
+}
+
+.mentionlegale {
+  position: absolute;
+  z-index: 10;
+  width: 70%;
+  margin-top: 15%;
+  margin-left: 17%;
+}
+.mentionlegale h1 {
+  font-family: "Home Christmas";
+  font-size: 7vw;
+  margin: 0;
+  font-weight: 400;
+  color: #564D45;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.mentionlegale h3 {
+  font-family: "Playball";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  color: rgb(35, 10, 10);
+}
+.mentionlegale section {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #564D45;
+}
+.mentionlegale a {
+  text-decoration: none;
+  color: rgb(35, 10, 10);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,8 +24,11 @@
             transition: all ease-in-out .3s;
             &:hover{
                 transform: scale(1.1,1.1);
+            }
         }
     }
+    .bignav420{
+        font-size: 3vw !important;
     }
     #title{
         position: absolute;
@@ -585,9 +588,27 @@
     }
 }
 
-// .piece4{
-    
-// }
+.piece4{
+    background-image: url(/img/piece4.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .ampoule{
+        position: absolute;
+        width: 100%;
+    }
+    #ampouleeffect{
+        z-index: 1;
+        animation: ampouleeffect 3s ease infinite;
+    }
+    #perenoel{
+        position: absolute;
+        z-index: 5;
+        width: 16.5vw;
+        margin-top: 49vh;
+        margin-left: 38vw;
+    }
+}
 
 @keyframes glow {
     0%{
