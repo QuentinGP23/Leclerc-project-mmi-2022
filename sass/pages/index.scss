@@ -14,21 +14,18 @@
         margin-top: 42vh;
         margin-left: 4.6vw;
         text-align: center;
-        transition: all ease-in-out .3s;
         cursor: pointer;
-        &:hover{
-            transform: scale(1.1,1.1) rotate(-23.97deg);
-            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
-                drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
-                drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
-                drop-shadow(0.1vw -0.1vh 5px #F8FD00);
-        }
+        z-index: 10;
         p{
             font-size: 3vw;
             font-family: "Pridi", serif;
             color: #162053;
             cursor: pointer;
+            transition: all ease-in-out .3s;
+            &:hover{
+                transform: scale(1.1,1.1);
         }
+    }
     }
     #title{
         position: absolute;
@@ -36,6 +33,10 @@
         width: 71vw;
         margin-left: 15.5vw;
         margin-top: 40vh;
+        animation-name:glow;
+        animation-duration:1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
     }
     #piece1ampoule{
         position: absolute;
@@ -587,6 +588,37 @@
 // .piece4{
     
 // }
+
+@keyframes glow {
+    0%{
+        filter:none;
+    }
+    10%,
+    50%{
+        filter: drop-shadow(0px 0px 0.4vw #fff)
+                drop-shadow(0px 0px 0.4vw #614ad3);
+    }
+    51%,
+    70%{
+        filter: drop-shadow(0px 0px 0.8vw #fff)
+                drop-shadow(0px 0px 0.8vw #614ad3);
+    }
+    70%,
+    75%{
+        filter: drop-shadow(0px 0px 0.4vw #fff)
+                drop-shadow(0px 0px 0.4vw #614ad3);
+    }
+    76%,
+    95%{
+        filter: drop-shadow(0px 0px 0.8vw #fff)
+                drop-shadow(0px 0px 0.8vw #614ad3);
+    }
+    96%,
+    100%{
+        filter: drop-shadow(0px 0px 0.4vw #fff)
+                drop-shadow(0px 0px 0.4vw #614ad3);
+    }
+}
 
 @keyframes bougieeffect {
 	0%,

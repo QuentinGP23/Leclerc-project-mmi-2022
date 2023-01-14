@@ -10,8 +10,26 @@
 </head>
 
 <body>
+    <div class="turn">
+        <img src="./../img/bigo.svg" alt="retournez votre téléphone" id="bigo" />
+        <p>Tournez votre écran</p>
+    </div>
     <header class="piece piece1">
-        <nav class="menu"><p>Menu</p></nav>
+        <div class="headershow">
+            <svg id="navcroix" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.92802" y1="-1.92802" x2="26.9794" y2="-1.92802" transform="matrix(0.693642 0.72032 -0.807499 0.589869 0.44989 1.78149)" stroke="white" stroke-width="3.85604" stroke-linecap="round"/>
+                <line x1="1.92802" y1="-1.92802" x2="26.9794" y2="-1.92802" transform="matrix(-0.693642 0.72032 0.807499 0.589869 23.5861 1.78149)" stroke="white" stroke-width="3.85604" stroke-linecap="round"/>
+                </svg>
+            <nav class="full">
+                <ul>
+                    <li><a href="/html/recettes.html">Recettes</a></li>
+                    <li><a href="/html/bd.html">BD du Père Noël</a></li>
+                    <li><a href="">Catalogue</a></li>
+                </ul>
+                <a href="https://www.e.leclerc/"><img src="/img/logowhite.png" alt="Logo leclerc" id="navlogo"></a>
+        </nav>        
+    </div>
+        <nav class="menu"><p id="openmenu">Menu</p></nav>
         <img src="/img/titreleclerc.svg" alt="E.Leclerc" id="title">
         <img src="/img/piece1ampoule.svg" alt="Ampoules" id="piece1ampoule">
         <img src="/img/piece1ampouleeffect.svg" alt="Ampoules" id="piece1ampouleeffect">
@@ -172,4 +190,5 @@
     </section>
 </body>
 <script src="/js/popupindex.js"></script>
+<script src="/js/header.js"></script>
 </html>

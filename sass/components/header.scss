@@ -1,0 +1,58 @@
+.headershow{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    z-index: 999;
+    transition: all ease-in-out 0.5s;
+    #navcroix{
+        width: 3vw;
+        position: absolute;
+        z-index: 5;
+        margin-left: 92%;
+        margin-top: 2%;
+        cursor: pointer;
+    }
+    #navlogo{
+        width: 100%;
+        position: relative;
+        bottom: -7%;
+    }
+    .full{
+        @include fullpagediv;
+        background-color: darkblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        ul{
+            list-style: none;
+            z-index: 1;
+            text-align: center;
+            margin-top: 8vw;
+            li{
+                transition: all ease-in-out .3s;
+                &:not(:last-child) {
+                    margin-bottom: 8vh;
+                }
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-family: 'Home Christmas';
+                    font-size: 6vw;
+                    margin: 0;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.headershow1{
+    transition: all ease-in-out 0.5s;
+    height: 100% !important;
+}

@@ -96,6 +96,67 @@ body {
   border-radius: 42px;
 }
 
+.headershow {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  z-index: 999;
+  transition: all ease-in-out 0.5s;
+}
+.headershow #navcroix {
+  width: 3vw;
+  position: absolute;
+  z-index: 5;
+  margin-left: 92%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.headershow #navlogo {
+  width: 100%;
+  position: relative;
+  bottom: -7%;
+}
+.headershow .full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headershow .full ul {
+  list-style: none;
+  z-index: 1;
+  text-align: center;
+  margin-top: 8vw;
+}
+.headershow .full ul li {
+  transition: all ease-in-out 0.3s;
+}
+.headershow .full ul li:not(:last-child) {
+  margin-bottom: 8vh;
+}
+.headershow .full ul li:hover {
+  transform: scale(1.1, 1.1);
+}
+.headershow .full ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Home Christmas";
+  font-size: 6vw;
+  margin: 0;
+  font-weight: 400;
+}
+
+.headershow1 {
+  transition: all ease-in-out 0.5s;
+  height: 100% !important;
+}
+
 .snap {
   width: 100vw;
   height: 100vh;
@@ -185,6 +246,12 @@ body main #recette1 h1 {
   grid-column: 1/span 3;
   align-self: center;
   justify-self: center;
+}
+body main #recette1 #openmenu {
+  position: absolute;
+  width: 5%;
+  margin-top: 3%;
+  margin-left: 90%;
 }
 body main #recette1 #logo {
   display: inline-grid;
@@ -811,18 +878,18 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   margin-top: 42vh;
   margin-left: 4.6vw;
   text-align: center;
-  transition: all ease-in-out 0.3s;
   cursor: pointer;
-}
-.piece1 .menu:hover {
-  transform: scale(1.1, 1.1) rotate(-23.97deg);
-  filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00) drop-shadow(-0.1vw 0.1vh 5px #F8FD00) drop-shadow(-0.1vw -0.1vh 5px #F8FD00) drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+  z-index: 10;
 }
 .piece1 .menu p {
   font-size: 3vw;
   font-family: "Pridi", serif;
   color: #162053;
   cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.piece1 .menu p:hover {
+  transform: scale(1.1, 1.1);
 }
 .piece1 #title {
   position: absolute;
@@ -830,6 +897,10 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   width: 71vw;
   margin-left: 15.5vw;
   margin-top: 40vh;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .piece1 #piece1ampoule {
   position: absolute;
@@ -1342,6 +1413,26 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   margin-top: 49%;
 }
 
+@keyframes glow {
+  0% {
+    filter: none;
+  }
+  10%, 50% {
+    filter: drop-shadow(0px 0px 0.4vw #fff) drop-shadow(0px 0px 0.4vw #614ad3);
+  }
+  51%, 70% {
+    filter: drop-shadow(0px 0px 0.8vw #fff) drop-shadow(0px 0px 0.8vw #614ad3);
+  }
+  70%, 75% {
+    filter: drop-shadow(0px 0px 0.4vw #fff) drop-shadow(0px 0px 0.4vw #614ad3);
+  }
+  76%, 95% {
+    filter: drop-shadow(0px 0px 0.8vw #fff) drop-shadow(0px 0px 0.8vw #614ad3);
+  }
+  96%, 100% {
+    filter: drop-shadow(0px 0px 0.4vw #fff) drop-shadow(0px 0px 0.4vw #614ad3);
+  }
+}
 @keyframes bougieeffect {
   0%, 50%, 100% {
     opacity: 0;
