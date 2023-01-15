@@ -1,3 +1,60 @@
+.popup420{
+    @include fullpagediv;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.393);
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 30%;
+        height: 35%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 700;
+            color: #1F6129;
+            width: 80%;
+            font-size: 1.5vw;
+            text-align: center;
+            span{
+                color: rgba(67, 116, 190, 1);
+            }
+            #orange{
+                color: rgba(243, 144, 34, 1);
+            }
+        }
+        p{
+            width: 80%;
+            font-size: .8vw;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.015em;
+            color: #465049;
+        }
+        button{
+            width: 22%;
+            height: 15%;
+            background: #F65A5A;
+            border: 0;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 700;
+            color: white;
+            font-size: 1vw;
+            transition: all ease-in-out .3s;
+            &:hover{
+                transform: scale(1.1,1.1)
+            }
+        }
+    }
+}
 .piece{
     @include fullpagediv;
 }
@@ -608,6 +665,15 @@
         width: 16.5vw;
         margin-top: 49vh;
         margin-left: 38vw;
+        transition: all ease-in-out .3s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw 0.1vh 5px #F8FD00)
+                    drop-shadow(-0.1vw -0.1vh 5px #F8FD00)
+                    drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+            cursor: pointer;
+        }
     }
 }
 

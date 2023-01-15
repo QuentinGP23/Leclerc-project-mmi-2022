@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Catalogue</title>
 </head>
-<body>
+
+<body class="bodyntm">
     <div class="turn">
         <img src="./../img/bigo.svg" alt="retournez votre téléphone" id="bigo" />
         <p>Tournez votre écran</p>
     </div>
+    <div class="headershow">
+        <svg id="navcroix" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.92802" y1="-1.92802" x2="26.9794" y2="-1.92802" transform="matrix(0.693642 0.72032 -0.807499 0.589869 0.44989 1.78149)" stroke="white" stroke-width="3.85604" stroke-linecap="round"/>
+            <line x1="1.92802" y1="-1.92802" x2="26.9794" y2="-1.92802" transform="matrix(-0.693642 0.72032 0.807499 0.589869 23.5861 1.78149)" stroke="white" stroke-width="3.85604" stroke-linecap="round"/>
+            </svg>
+        <nav class="full">
+            <ul>
+                <li><a href="/index.html">Maison du pere noel</a></li>
+                <li><a href="/html/recettes.html">Recettes</a></li>
+                <li><a href="/html/bd.html">BD du Pere Noel</a></li>
+            </ul>
+            <a href="https://www.e.leclerc/"><img src="/img/logowhite.png" alt="Logo leclerc" id="navlogo"></a>
+    </nav>        
+</div>
+    <img src="/img/headerneige.svg" alt="Neige" class="headerneige">
+    <a href="/index.html"><img src="/img/leclerc.svg" alt="Logo leclerc" class="logo hover"></a>
+    <p class="txtmenu">Menu</p>
+    <img src="/img/togglecatalogue.svg" alt="Menu" class="toggle" id="openmenu" >
     <section class="loader">
-        <h1>La Maison du pere Noel</h1>
+         <h1>La Maison du pere Noel</h1>
         <div class="infos">
             <svg width="86" height="99" viewBox="0 0 86 99" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_231_5627)">
@@ -39,5 +59,25 @@
         <div class="loadbar" id="fond"></div>
         <div class="loadbar" id="front"></div>
     </section>
-</body>
+  <form action="support.php" method="get">
+    <img src="/img/popupneige1.svg" alt="neige" id="neige">
+    <img src="/img/popupneige2.svg" alt="neige" id="neige1">
+    <h2>J'aimerai apprendre à te connaitre</h2>
+        <span><Label for="name">Nom</Label>
+        <input type="text" id="name" name="name">
+        <Label for="prename">Prénom</Label>
+        <input type="text" id="prename" name="prename"></span>
+        <span>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </span>
+        <span>
+            <Label for="message">Quelle est votre message ?</Label>
+            <input type="text" id="message" name="message">
+        </span>
+        <button type="submit">Envoyer</button>
+  </form>
+    </body>
+    <script src="/js/header.js"></script>
+    <script src="/js/pointer.js"></script>
 </html>

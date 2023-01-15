@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./form.css" />
+	</head>
+	<body>
+		<!-- <form class="formulaire">
+			<h3>J’aimerai apprendre à te connaitre !</h3>
+			<label for="nom">Nom</label>
+			<input type="text" name="nom" id="nom" />
+
+			<label for="prenom">Prénom</label>
+			<input type="text" name="prenom" id="prenom" />
+
+			<label for="textarea">Quels sont tes jouets favoris ?</label>
+			<textarea
+				name=""
+				id=""
+				cols="30"
+				rows="10"
+				name="textarea"
+				id="textarea"
+				class="textarea"></textarea>
+
+			<label for="Friend">Quel est le prenom de ton/ta meilleur(e) ami(e) ?</label>
+			<input type="text" name="bestFriend" id="Friend" />
+
+			<label for="color">Quel est ta couleur préférée ?</label>
+			<input type="text" name="color" id="color" />
+		</form> -->
+
+		<div class="form-container">
+			<h1>J’aimerai apprendre à te connaitre !</h1>
+			<form action="/action_page.php">
+				<label for="fname">Nom</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ton prénom" />
+				<label for="lname">Prénom</label>
+				<input type="text" id="lname" name="lastname" placeholder="Ton nom" />
+
+				<label for="subject">Quels sont tes jouets favoris ?</label>
+				<textarea
+					id="subject"
+					name="subject"
+					placeholder="Vos jouets favoris"
+					style="height: 200px"></textarea>
+
+				<label for="sujet">Comment s'appelle ton/ta meilleur(e) ami(e) ?</label>
+				<input type="text" id="sujet" name="sujet" />
+
+				<label for="emailAddress">Quel est ta couleur préférée ?</label>
+				<input id="emailAddress" type="email" name="email" />
+				<div class="submit-container">
+					<input type="submit" value="Jouer" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

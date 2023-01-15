@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bande dessinée</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="body420">
+		
+		<div class="game-wrapper">
+			<div class="form-container">
+				<h1>J’aimerai apprendre à te connaitre !</h1>
+				<form>
+					<label for="fname">Nom</label>
+					<input
+						type="text"
+						id="fname"
+						name="firstname"
+						placeholder="Ton prénom"
+						class="input-name" />
+					<label for="lname">Prénom</label>
+					<input
+						type="text"
+						id="lname"
+						name="lastname"
+						placeholder="Ton nom"
+						class="input-last-name" />
+
+					<label for="subject">Quels sont tes jouets favoris ?</label>
+					<textarea
+						id="subject"
+						name="subject"
+						placeholder="Vos jouets favoris"
+						style="height: 200px"
+						class="input-textarea"></textarea>
+
+					<label for="sujet">Comment s'appelle ton/ta meilleur(e) ami(e) ?</label>
+					<input type="text" id="sujet" name="sujet" class="input-best-friend" />
+
+					<label for="emailAddress">Quel est ta couleur préférée ?</label>
+					<input id="emailAddress" type="email" name="email" class="input-favorite-color" />
+					<div class="submit-container">
+						<span class="error-message"></span>
+						<input type="submit" value="Jouer" class="submit-btn" />
+					</div>
+				</form>
+			</div>
+			<div class="container-intro">
+				<img
+					src="./img/intro/SVG/background_intro.svg"
+					alt="fond décoratif de l'intro du jeu"
+					class="decors" />
+				<img
+					src="./img/dialogue/SVG/dialogue_1_1.svg"
+					alt="lutin et son dialogue"
+					class="dialogue_1" />
+			</div>
+			<div class="texte-container">
+				<span class="paragraphe">
+					Avant d'accéder au jeu, j'aimerais que tu réponde à quelques questions s'il te plait ...
+				</span>
+				<span class="suivant suivant-intro">suivant</span>
+			</div>
+			<img
+				src="./img/dialogue/SVG/dialogue_4_1.svg"
+				alt="pere noel qui parle"
+				class="pere-noel-bulle" />
+
+			<!-- deuxieme jeu  -->
+
+			<div class="container container-jeu-2">
+				<img
+					src="./img/second-game/background-game.svg"
+					alt="decors où chercher les cadeaux"
+					class="decors container-jeu-2-img" />
+
+				<div class="container-cadeau container-cadeau-1">
+					<img
+						src="./img/second-game/Cadeaux_bleu.svg"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="cadeau cadeau-1" />
+				</div>
+				<div class="container-cadeau container-cadeau-2">
+					<img
+						src="./img/second-game/Cadeaux_rouge.png"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="cadeau cadeau-2" />
+				</div>
+				<div class="container-cadeau container-cadeau-3">
+					<img
+						src="./img/second-game/Cadeaux_vert.png"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="cadeau cadeau-3" />
+				</div>
+				<div class="container-cadeau container-cadeau-4">
+					<img
+						src="./img/second-game/Cadeaux_vert_large.png"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="cadeau cadeau-4" />
+				</div>
+				<div class="container-cadeau container-cadeau-5">
+					<img
+						src="./img/second-game/Cadeaux_vert_large_pingouin.png"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="cadeau cadeau-5" />
+				</div>
+
+				<div class="compteur compteur-jeu-2">
+					Cadeaux restants : <span class="lutins-restants-jeu-2">5</span>
+				</div>
+				<!-- Popup deuxieme jeu -->
+
+				<div class="popup-container popup-container-jeu-2">
+					<!-- <span class="container-text">Bravo tu as trouvé</span>
+					<span class="container-text">tout les cadeaux ! </span> -->
+				</div>
+			</div>
+
+			<!-- Premier JEU -->
+			<div class="container cointainer-jeu-1">
+				<img src="./img/first-game/decor.jpg" alt="decors où chercher les lutins" class="decors" />
+				<div class="disappear disappear-1">
+					<img
+						src="./img/first-game/lutin1.svg"
+						alt="lutin, cliquer sur tous les lutins pour gagner le jeu"
+						class="lutin lutin-1" />
+				</div>
+				<div class="disappear disappear-2">
+					<img
+						src="./img/first-game/lutin2.svg"
+						alt="lutin, cliquer sur tous les lutins pour gagner le jeu"
+						class="lutin lutin-2" />
+				</div>
+				<div class="disappear disappear-3">
+					<img
+						src="./img/first-game/lutin3.svg"
+						alt="lutin, cliquer sur tous les lutins pour gagner le jeu"
+						class="lutin lutin-3" />
+				</div>
+				<div class="disappear disappear-4">
+					<img
+						src="./img/first-game/lutin4.svg"
+						alt="lutin, cliquer sur tous les lutins pour gagner le jeu"
+						class="lutin lutin-4" />
+				</div>
+				<div class="compteur compteur-jeu-1">
+					Lutins restants : <span class="lutins-restants">4</span>
+				</div>
+
+				<!-- Poppup premier jeu -->
+				<div class="popup-win popup-jeu-1">
+					<img
+						src="./img/first-game/bete.svg"
+						alt="lutin décoratif"
+						class="popup-lutin popup-lutin-1" />
+					<img
+						src="./img/first-game/lutin_hd.svg"
+						alt="lutin décoratif"
+						class="popup-lutin popup-lutin-2" />
+					<img
+						src="./img/first-game/lutin_bd.svg"
+						alt="lutin décoratif"
+						class="popup-lutin popup-lutin-3" />
+					<img
+						src="./img/first-game/lutin_bg.svg"
+						alt="lutin décoratif"
+						class="popup-lutin popup-lutin-4" />
+					<p>
+						<!-- <span class="container-text">BRAVO TU AS TROUVÉ</span
+						><span class="container-text">TOUS LES LUTINS !</span> -->
+					</p>
+				</div>
+			</div>
+
+			<!-- troisieme jeu  -->
+
+			<div class="container cointainer-jeu-3">
+				<img
+					src="./img/third-game/background.jpg"
+					alt="decors où chercher le lutin vicieux"
+					class="decors cointainer-jeu-3-img" />
+
+				<div class="container-lutin-vicieux">
+					<img
+						src="./img/third-game/lutin_vicieux.svg"
+						alt="cadeau, cliquer sur tous les cadeaux pour gagner le jeu"
+						class="lutin-vicieux" />
+				</div>
+
+				<div class="compteur compteur-jeu-3">Trouve le lutin vicieux</div>
+				<!-- Popup troisieme jeu -->
+
+				<div class="popup-container popup-container-jeu-3">
+					<!-- <span class="container-text">Bravo tu as trouvé</span>
+					<span class="container-text">tout les cadeaux ! </span> -->
+				</div>
+			</div>
+		</div>
+
+		<script src="./functions.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

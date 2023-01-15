@@ -20,6 +20,8 @@ const croixfusee = document.getElementById("croixfusee");
 const canard = document.getElementById("canard");
 const popuprecette3canard = document.getElementById("popuprecette3canard");
 const croixcanard = document.getElementById("croixcanard");
+const btn420 = document.getElementById("btn420");
+const popup420 = document.querySelector('.popup420');
 
 
 biscuit.addEventListener('click', function(event){
@@ -122,4 +124,8 @@ fenetre1.addEventListener('click', function(event){
 croixcanard.addEventListener('click', function(event){
     popuprecette3canard.style.display="none";
     fenetre1.style.display="none";
+});
+
+btn420.addEventListener('click', function(event){
+    popup420.style.display="none";
 });

@@ -1,0 +1,402 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.body420{
+	background-image: url("/img/fondheader.svg");
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Magical Story';
+}
+
+@font-face {
+	font-family: 'Magical Story Outline';
+	src: url('./fonts/Magical_Story_Outline.ttf');
+}
+@font-face {
+	font-family: 'Magical Story Shadow';
+	src: url('./fonts/Magical_Story_Shadow.ttf');
+}
+@font-face {
+	font-family: 'Magical Story';
+	src: url('./fonts/Magical_Story.ttf');
+}
+
+/* export */
+
+.game-wrapper {
+	position: relative;
+	width: 100vmin;
+	height: 100vmin;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cointainer-jeu-1,
+.popup-jeu-1,
+.container-jeu-2,
+.popup-container-jeu-2,
+.cointainer-jeu-3,
+.popup-container-jeu-3 {
+	display: none;
+}
+.container-jeu-2-img,
+.cointainer-jeu-1,
+.cointainer-jeu-3-img {
+	filter: grayscale(70%);
+}
+
+.pere-noel-bulle {
+	display: none;
+	position: absolute;
+	width: 94.54%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/* INTRO */
+
+.paragraphe {
+	display: block;
+	/* width: fit-content; */
+}
+
+.dialogue_1 {
+	position: absolute;
+	width: 95%;
+	bottom: 0;
+	left: 0;
+}
+
+.texte-container {
+	position: absolute;
+	/* width: fit-content; */
+	display: flex;
+	flex-direction: column;
+	top: 22%;
+	left: 40%;
+	width: 45%;
+	z-index: 2;
+}
+
+.suivant {
+	color: green;
+	/* color: rgb(227 6 19); */
+	display: block;
+	cursor: pointer;
+	/* width: fit-content; */
+	align-self: flex-end;
+}
+/* JEU */
+
+.container,
+.container-intro {
+	height: 100vmin;
+	position: relative;
+	font-family: 'Magical Story';
+	font-size: 32px;
+}
+
+.container > img {
+	user-select: none;
+}
+
+.decors {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.lutin {
+	cursor: pointer;
+	height: 100%;
+}
+
+.compteur {
+	width: 35%;
+	height: 64px;
+	position: absolute;
+	top: 35px;
+	left: 64.72%;
+	border-radius: 31px;
+	text-align: center;
+	line-height: 69px;
+}
+
+.compteur-jeu-1 {
+	background-color: #429152;
+	box-shadow: 0px 5px #ad2423;
+}
+
+.disappear {
+	position: absolute;
+	overflow: hidden;
+}
+
+.disappear-1 {
+	left: 54.46%;
+	top: 77.26%;
+	height: 9.43%;
+}
+.disappear-2 {
+	left: 85.32%;
+	top: 33.4%;
+	height: 2.52%;
+}
+.disappear-3 {
+	left: 42.92%;
+	top: 32.64%;
+	height: 3.46%;
+}
+.disappear-4 {
+	left: 15.95%;
+	top: 23.45%;
+	height: 4.54%;
+	/* width: 200px; */
+}
+
+.lutin-2,
+.lutin-3,
+.lutin-4 {
+	display: none;
+	position: relative;
+	transition: ease all 0.4s;
+}
+.lutin-2 {
+	transform: translate(92%, -92%);
+}
+.lutin-3 {
+	transform: translate(0, 97%);
+}
+.lutin-4 {
+	transform: translate(-95%, 0);
+	background-color: red;
+	clip-path: polygon(
+		50% 0%,
+		100% 0,
+		100% 35%,
+		100% 70%,
+		100% 100%,
+		50% 100%,
+		20% 90%,
+		0% 70%,
+		0% 35%,
+		0 0
+	);
+}
+
+/* POPUP */
+
+.popup-win {
+	background-color: #419151;
+	width: 100vmin;
+	height: 100vmin;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 68px;
+	transition: ease 0.4s transform;
+	transform: translate(-50%, -50%) scale(0);
+	top: 50%;
+	left: 50%;
+}
+
+.popup-lutin {
+	position: absolute;
+	width: 15%;
+}
+
+.popup-lutin-1 {
+	top: 0;
+	left: 0;
+}
+.popup-lutin-2 {
+	top: 0;
+	right: 0;
+}
+.popup-lutin-3 {
+	/* top: 0; */
+	right: 0;
+	bottom: 0;
+}
+.popup-lutin-4 {
+	bottom: 0;
+	left: 0;
+}
+
+.popup-win > p {
+	font-family: 'Magical Story';
+}
+
+/* JEU 2 */
+
+.popup-container {
+	background-image: url('./img/second-game/cadeau-background.svg');
+	background-repeat: no-repeat;
+	height: 100vmin;
+	width: 100vmin;
+	background-color: #258e8f;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	transform: translate(-50%, -50%) scale(0);
+	top: 50%;
+	left: 50%;
+	transition: transform 0.4s ease;
+}
+
+.container-text {
+	display: block;
+	text-align: center;
+	font-size: 45px;
+}
+
+.cadeau {
+	height: 100%;
+	cursor: pointer;
+}
+
+.compteur-jeu-2 {
+	background-color: #258e8f;
+	box-shadow: 0px 5px #0c4948;
+}
+
+.container-cadeau {
+	position: absolute;
+}
+.container-cadeau-1 {
+	top: 68%;
+	right: 24.1%;
+	height: 2.4%;
+}
+.container-cadeau-2 {
+	top: 32%;
+	left: 29%;
+	height: 2.4%;
+}
+.container-cadeau-3 {
+	top: 61%;
+	left: 9.41%;
+	height: 3.34%;
+}
+.container-cadeau-4 {
+	top: 34.7%;
+	left: 71.3%;
+	height: 2.4%;
+}
+.container-cadeau-5 {
+	bottom: 32.7%;
+	right: 16.91%;
+	height: 3.92%;
+}
+
+/* JEU 3 */
+
+.compteur-jeu-3 {
+	background-color: #ba8665;
+	box-shadow: 0px 5px #603a23;
+}
+
+.container-lutin-vicieux {
+	top: 48.5%;
+	left: -1.3%;
+	height: 7.7%;
+	position: absolute;
+	cursor: pointer;
+}
+.lutin-vicieux {
+	height: 100%;
+}
+
+/* formulaire */
+
+input[type='text'],
+textarea,
+input[type='email'] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	margin-right: 0px;
+	margin-left: 0px;
+	resize: none;
+}
+label {
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 100%;
+	color: #fff;
+}
+
+input[type='submit'] {
+	padding: 12px 20px;
+	border: none;
+	color: #691511;
+	border-radius: 4px;
+	cursor: pointer;
+	align-self: flex-end;
+	background: linear-gradient(180deg, #f6d98d 0%, hsl(43, 100%, 50%) 100%);
+	font-weight: bold;
+	font-size: 16px;
+}
+
+input[type='submit']:hover {
+	background: linear-gradient(180deg, hsl(43, 85%, 86%) 0%, hsl(43, 100%, 60%) 100%);
+}
+
+.form-container {
+	/* Ajouter box-sizing */
+	border-radius: 5px;
+	background: linear-gradient(180deg, #a33835 0%, #691511 100%);
+
+	padding: 20px;
+	width: 100%;
+	/* redéfinition 400 + 2*20 */
+	max-width: 440px;
+	margin: 0 auto;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.submit-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-container > h1 {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+}
+form > label,
+form > input,
+form > textarea,
+form > span {
+	font-size: 1rem;
+}
+
+.error-message {
+	display: block;
+	color: green;
+	height: 100%;
+	width: 100%;
+	font-size: 1.2rem;
+}

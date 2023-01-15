@@ -7,7 +7,23 @@ body{
     width: 100%;
     box-sizing: border-box;
     overflow: overlay;
+    // cursor: none;
 }
+
+// .pointer{
+//     position: fixed;
+//     z-index: 100;
+//     width: 2vw;
+//     transition: none;
+// }
+
+// .pointer1{
+//     position: fixed;
+//     z-index: 100;
+//     width: 2vw;
+//     transition: none;
+//     display: none;
+// }
 
 .turn{
     display:none;

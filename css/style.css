@@ -7,6 +7,7 @@
 @import url("https://fonts.cdnfonts.com/css/gotham"); /*Gotham*/
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap"); /*bitter*/
 @import url("https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap"); /*pridi*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"); /*Lato*/
 html {
   scroll-behavior: smooth;
 }
@@ -1008,6 +1009,66 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   margin-left: 88%;
 }
 
+.popup420 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.393);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup420 div {
+  width: 30%;
+  height: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.popup420 div h3 {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  color: #1F6129;
+  width: 80%;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.popup420 div h3 span {
+  color: rgb(67, 116, 190);
+}
+.popup420 div h3 #orange {
+  color: rgb(243, 144, 34);
+}
+.popup420 div p {
+  width: 80%;
+  font-size: 0.8vw;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  color: #465049;
+}
+.popup420 div button {
+  width: 22%;
+  height: 15%;
+  background: #F65A5A;
+  border: 0;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  font-size: 1vw;
+  transition: all ease-in-out 0.3s;
+}
+.popup420 div button:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .piece {
   position: relative;
   width: 100%;
@@ -1587,6 +1648,12 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   width: 16.5vw;
   margin-top: 49vh;
   margin-left: 38vw;
+  transition: all ease-in-out 0.3s;
+}
+.piece4 #perenoel:hover {
+  transform: scale(1.1, 1.1);
+  filter: drop-shadow(0.1vw 0.1vh 5px #F8FD00) drop-shadow(-0.1vw 0.1vh 5px #F8FD00) drop-shadow(-0.1vw -0.1vh 5px #F8FD00) drop-shadow(0.1vw -0.1vh 5px #F8FD00);
+  cursor: pointer;
 }
 
 @keyframes glow {
@@ -1830,6 +1897,73 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
 .mentionlegale a {
   text-decoration: none;
   color: rgb(35, 10, 10);
+}
+
+form {
+  position: absolute;
+  z-index: 100;
+  margin-top: 19%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  border-radius: 2vw;
+  height: 50%;
+  background: linear-gradient(180deg, #A33835 0%, #691511 100%);
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: white;
+}
+form h2 {
+  font-size: 2vw;
+  margin-top: 8%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+form span {
+  margin-bottom: 5%;
+  width: 75%;
+  text-align: center;
+}
+form label {
+  font-size: 1vw;
+  margin-right: 2%;
+}
+form input {
+  background-color: #210E0B;
+  border: 2px solid #E88D8D;
+  opacity: 0.3;
+  color: white;
+  margin-right: 10%;
+  width: 25%;
+  height: 88%;
+}
+form button {
+  background: linear-gradient(180deg, #F6D98D 0%, #FFB700 100%);
+  filter: drop-shadow(0 0.1vw 0.1vw rgba(0, 0, 0, 0.25));
+  border-radius: 2vw;
+  border: 0;
+  width: 14%;
+  height: 10%;
+  font-size: 1vw;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 800;
+}
+form #neige {
+  position: absolute;
+  width: 37%;
+  margin-top: -3%;
+  margin-left: -68%;
+}
+form #neige1 {
+  position: absolute;
+  width: 35%;
+  margin-top: 37%;
+  margin-left: -72%;
 }
 
 /*# sourceMappingURL=style.css.map */
