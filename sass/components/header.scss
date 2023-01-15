@@ -4,7 +4,7 @@
     width: 100%;
     height: 0%;
     z-index: 999;
-    transition: all ease-in-out 0.5s;
+    // transition: all ease-in-out 0.5s;
     #navcroix{
         width: 3vw;
         position: absolute;
@@ -12,15 +12,23 @@
         margin-left: 92%;
         margin-top: 2%;
         cursor: pointer;
+        line{
+            stroke: #163A5B;
+        }
     }
-    #navlogo{
-        width: 100%;
-        position: relative;
-        bottom: -7%;
+    
+    a{
+        margin-top: 1.5%;
+        #navlogo{
+            width: 100%;
+            position: relative;        
+        }
     }
     .full{
         @include fullpagediv;
-        background-color: darkblue;
+        background-image: url('/img/fondheader.svg');
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,7 +37,7 @@
             list-style: none;
             z-index: 1;
             text-align: center;
-            margin-top: 8vw;
+            margin-top: 16vw;
             li{
                 transition: all ease-in-out .3s;
                 &:not(:last-child) {
@@ -43,7 +51,7 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     font-family: 'Home Christmas';
-                    font-size: 6vw;
+                    font-size: 4.5vw;
                     margin: 0;
                     font-weight: 400;
                 }

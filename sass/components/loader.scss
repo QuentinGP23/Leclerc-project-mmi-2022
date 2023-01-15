@@ -1,0 +1,91 @@
+.loader{
+    @include fullpagediv;
+    position: fixed;
+    overflow: hidden;
+    background-image: url("/img/fondloader.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9999;
+    animation: dispone .1s normal forwards;
+    animation-delay: 3s;
+    h1{
+        font-family: "Home Christmas";
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        position: absolute;
+        -webkit-text-stroke: 3px #101E41;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        font-size: 6vw;
+        width: 49vw;
+        margin-left: 25vw;
+        margin-top: 38vh;
+        font-size: 5vw;
+    }
+    .infos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        margin-top: 80vh;
+        margin-left: 40.7vw;
+        width: 20vw;
+        svg{
+            height: 120%;
+        }
+        p{
+            font-family: "Rounded Mplus 1c", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            color: white;
+            position: relative;
+            left: 6%;
+        }
+    }
+    .loadbar{
+        height: 5vh;
+        position: absolute;
+        border-radius: 3vw;
+        margin-top: 70vh;
+        margin-left: 35vw;
+    }
+    #fond{
+        background-color: white;
+        z-index: 1;
+        width: 30vw;
+    }
+    #front{
+        background-image: url("/img/scrollbar.svg");
+        background-position: center;
+        background-size: 5vw;
+        z-index: 2;
+        width: 0vw;
+        animation: scroll 3s;
+        transition: all;
+    }
+}
+
+@keyframes scroll{
+    from {
+        width:0vw
+    }
+    to {
+        width: 30vw;
+    }
+}
+
+@keyframes dispone{
+    from {
+        opacity: 1;
+        z-index: 999;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}

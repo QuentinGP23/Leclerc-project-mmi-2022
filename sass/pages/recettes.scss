@@ -42,7 +42,7 @@
                 }
             }
             #recette1{
-                background: linear-gradient(180deg, #4D45AC 0%, #231A89 100%);
+                background: radial-gradient(50% 50% at 50% 50%, #163A5B 30.35%, #102B4E 100%);
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 20% 1fr;
