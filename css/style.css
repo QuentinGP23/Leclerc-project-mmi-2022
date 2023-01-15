@@ -219,6 +219,7 @@ footer .footertxt a .ligne img {
   background-size: cover;
   z-index: 9999;
   animation: dispone 0.1s normal forwards;
+  animation-delay: 3s;
 }
 .loader h1 {
   font-family: "Home Christmas";
@@ -228,7 +229,7 @@ footer .footertxt a .ligne img {
   text-align: center;
   color: white;
   position: absolute;
-  -webkit-text-stroke: 3px #101E41;
+  -webkit-text-stroke: 1px #101E41;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 6vw;
   width: 49vw;
@@ -1745,7 +1746,7 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   position: relative;
   z-index: 10;
   left: 17.7%;
-  top: 57vh;
+  top: 40vh;
   width: 29%;
   height: 7%;
 }
@@ -1769,7 +1770,7 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   position: relative;
   z-index: 10;
   left: 59.8%;
-  top: 43vh;
+  top: 26vh;
   width: 24%;
   height: 7%;
 }
@@ -1791,7 +1792,7 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   position: absolute;
   width: 65%;
   height: 110%;
-  margin-top: 43vh;
+  margin-top: 26vh;
   margin-left: 17.85%;
   z-index: 10;
 }
