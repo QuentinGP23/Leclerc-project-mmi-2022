@@ -1,0 +1,42 @@
+footer{
+    @include fullpagediv;
+    background-image: url("/img/fondfooter.svg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    .footertxt{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin-top: 18%;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 2vw;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    filter: drop-shadow(0.1vw 0.1vh 5px #f9fd007c)
+                            drop-shadow(-0.1vw 0.1vh 5px #f9fd007c)
+                            drop-shadow(-0.1vw -0.1vh 5px #f9fd007c)
+                            drop-shadow(0.1vw -0.1vh 5px #f9fd007c);
+                }
+                .ligne{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 10%;
+                    img{
+                        width: 5vw;
+                        margin-right: 2vw;
+                    }
+                }
+            }
+    }
+}
