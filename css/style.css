@@ -1069,6 +1069,36 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   transform: scale(1.1, 1.1);
 }
 
+#sol {
+  margin: 0;
+  width: 100%;
+  background-image: url(/img/sol.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 6.25vh;
+}
+
+#sol1 {
+  margin: 0;
+  width: 100%;
+  background-image: url(/img/sol1.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 3.5vh;
+}
+
+#sol2 {
+  margin: 0;
+  width: 100%;
+  background-image: url(/img/sol2.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 3.5vh;
+}
+
 .piece {
   position: relative;
   width: 100%;
@@ -1590,13 +1620,6 @@ body main #recette5 .preparation .txtprepa5 #recette5btn1 {
   margin-top: 72.2vh;
   width: 2.2vw;
   cursor: pointer;
-}
-.piece3 #entreecadeau {
-  position: absolute;
-  z-index: 10;
-  margin-left: 55vw;
-  margin-top: 71vh;
-  width: 4vw;
 }
 .piece3 #gifteffect {
   position: absolute;
